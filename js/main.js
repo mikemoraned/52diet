@@ -2,13 +2,14 @@ $(function() {
     console.log("BEGINETH THE HACKING");
 
     function toWeightOverTime(data) {
-        var items = data.items;
-        return items.map(function(d) {
+        var parse = d3.time.format("%a, %d %b %Y %H:%M:%S").parse;
+        var values = data.items.map(function(d) {
             return {
-                'weight' : d.weight,
-                'date'   : moment(d.timestamp, "ddd, DD MMM YYYY hh:mm:ss").toDate()
+                'date' : parse(d.timestamp),
+                'weight' : d.weight
             };
         });
+        return values;
     }
 
     var margin = {top: 20, right: 20, bottom: 30, left: 50},
