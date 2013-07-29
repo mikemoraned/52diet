@@ -1,0 +1,9 @@
+{
+  "name": "js",
+  "version": "0.0.0",
+  "dependencies": {
+    "d3": "~3.2.7",
+    "jquery": "~2.0.3",
+    "moment": "~2.1.0"
+  }
+}
