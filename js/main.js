@@ -3,68 +3,46 @@ $(function() {
 
     function toWeightOverTime(data) {
         var items = data.items;
-        return items.map(function(d) {
+        var parse = d3.time.format("%a, %d %b %Y %H:%M:%S").parse;
+        var values = items.map(function(d) {
             return {
-                'weight' : d.weight,
-                'date'   : moment(d.timestamp, "ddd, DD MMM YYYY hh:mm:ss").toDate()
+                'x' : parse(d.timestamp),
+                'y' : d.weight
             };
         });
+//        values = values.slice(0, 10);
+//        values.sort(function(a, b) {
+//            return b.x.getTime() - a.x.getTime();
+//        });
+        return {
+            'key'    : "Weight",
+            'color'  : '#ff7f0e',
+            'values' : values
+        };
     }
-
-    var margin = {top: 20, right: 20, bottom: 30, left: 50},
-        width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
-
-    var x = d3.time.scale()
-        .range([0, width]);
-
-    var y = d3.scale.linear()
-        .range([height, 0]);
-
-    var xAxis = d3.svg.axis()
-        .scale(x)
-        .orient("bottom");
-
-    var yAxis = d3.svg.axis()
-        .scale(y)
-        .orient("left");
-
-    var line = d3.svg.line()
-        .x(function(d) { return x(d.date); })
-        .y(function(d) { return y(d.weight); });
-
-    var svg = d3.select("svg#chart")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     d3.json("/js/data/snapshot.json", function(json) {
         var data = toWeightOverTime(json);
 
         console.dir(data);
 
-        x.domain(d3.extent(data, function(d) { return d.date; }));
-        y.domain(d3.extent(data, function(d) { return d.weight; }));
+        nv.addGraph(function() {
+            var chart = nv.models.lineChart();
 
-        svg.append("g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(0," + height + ")")
-            .call(xAxis);
+            chart.xAxis
+                .axisLabel('Date');
 
-        svg.append("g")
-            .attr("class", "y axis")
-            .call(yAxis)
-            .append("text")
-            .attr("transform", "rotate(-90)")
-            .attr("y", 6)
-            .attr("dy", ".71em")
-            .style("text-anchor", "end")
-            .text("Price ($)");
+            chart.yAxis
+                .axisLabel('Weight');
 
-        svg.append("path")
-            .datum(data)
-            .attr("class", "line")
-            .attr("d", line);
+            d3.select('svg#chart')
+                .datum([data])
+                .transition().duration(500)
+                .call(chart);
+
+            nv.utils.windowResize(function() { d3.select('svg#chart').call(chart); });
+
+            return chart;
+        });
     });
 });
