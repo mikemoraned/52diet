@@ -17,20 +17,28 @@ $(function() {
         var elem = document.getElementById('weight-by-day-spiral-chart');
         var two = new Two({ width: 400, height: 400 }).appendTo(elem);
 
-        var circle = two.makeCircle(-70, 0, 50);
-        var rect = two.makeRectangle(70, 0, 100, 100);
-        circle.fill = '#FF8000';
-        circle.stroke = 'orangered';
-        rect.fill = 'rgba(0, 200, 255, 0.75)';
-        rect.stroke = '#1C75BC';
+//        var circle = two.makeCircle(-70, 0, 50);
+//        var rect = two.makeRectangle(70, 0, 100, 100);
+//        circle.fill = '#FF8000';
+//        circle.stroke = 'orangered';
+//        rect.fill = 'rgba(0, 200, 255, 0.75)';
+//        rect.stroke = '#1C75BC';
 
 // Groups can take an array of shapes and/or groups.
-        var group = two.makeGroup(circle, rect);
+//        var group = two.makeGroup(circle, rect);
 
 // And have translation, rotation, scale like all shapes.
+//        group.translation.set(two.width / 2, two.height / 2);
+//        group.rotation = Math.PI / 2;
+//        group.scale = 0.75;
+
+        var guide = two.makeCurve(0.0, 0.0, 0.1, 0.3, 0.0, 0.5, -0.5, -0.7, true);
+        guide.linewidth = 0.05;
+        guide.stroke = 'orangered';
+
+        var group = two.makeGroup(guide);
         group.translation.set(two.width / 2, two.height / 2);
-        group.rotation = Math.PI / 2;
-        group.scale = 0.75;
+        group.scale = (two.width / 2);
 
 
 // Bind a function to scale and rotate the group
@@ -38,12 +46,12 @@ $(function() {
         two.bind('update', function(frameCount) {
             // This code is called everytime two.update() is called.
             // Effectively 60 times per second.
-            if (group.scale > 0.9999) {
-                group.scale = group.rotation = 0;
-            }
-            var t = (1 - group.scale) * 0.125;
-            group.scale += t;
-            group.rotation += t * 4 * Math.PI;
+//            if (group.scale > 0.9999) {
+//                group.scale = group.rotation = 0;
+//            }
+//            var t = (1 - group.scale) * 0.125;
+//            group.scale += t;
+//            group.rotation += t * 4 * Math.PI;
         }).play();
     }
 
