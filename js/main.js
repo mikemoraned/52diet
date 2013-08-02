@@ -13,7 +13,7 @@ $(function() {
     }
 
     function renderSpiral(json) {
-        var data = toWeightOverTime(json);
+        var data = _.filter(toWeightOverTime(json), function(d) {return d.weight > 50;});
 
         // Make an instance of two and place it on the page.
         var elem = document.getElementById('weight-by-day-spiral-chart');
@@ -35,45 +35,70 @@ $(function() {
 //        group.scale = 0.75;
 
         console.dir(data.length);
-        var cycleLength = 7;
+//        var cycleLength = 7;
 //        var cycleLength = data.length / 2;
-//        var cycleLength = data.length;
-        var turns = Math.ceil((1.0 * data.length) / cycleLength);
+        var cycleLength = data.length;
+        var turns = Math.ceil((1.0 * data.length) / cycleLength) + 1;
         var stride = ((two.height / 2.0) / turns) / cycleLength;
         console.dir(cycleLength);
         console.dir(turns);
         console.dir(stride);
 
-        var points = [];
+        var weights = _.pluck(data, 'weight');
+        var min_weight = _.min(weights);
+        var max_weight = _.max(weights);
+        var weight_range = max_weight - min_weight;
+
+        var guidePoints = [];
+        var dataPoints = [];
         var centre = new Two.Vector(0, 0);
         var lines = [];
         for(var i = 0; i < data.length; i++) {
             var r_base = (1.0 * i) * stride;
             var theta = 2 * Math.PI * ((i % cycleLength) / cycleLength);
 
-            var x = r_base * Math.cos(theta);
-            var y = r_base * Math.sin(theta);
+            var r_offset = (stride * cycleLength) * ((data[i].weight - min_weight) / weight_range);
+            var r_data = r_base + r_offset;
 
-            var point = new Two.Vector(x, y);
-            points.push(point);
+            var x_guide = r_base * Math.cos(theta);
+            var y_guide = r_base * Math.sin(theta);
+
+            var guidePoint = new Two.Vector(x_guide, y_guide);
+            guidePoints.push(guidePoint);
+
+            var x_data = r_data * Math.cos(theta);
+            var y_data = r_data * Math.sin(theta);
+
+            var dataPoint = new Two.Vector(x_data, y_data);
+            dataPoints.push(dataPoint);
+
 //            console.dir(point.x);
 //            console.dir(point.y);
 
-            lines.push(two.makeLine(centre.x, centre.y, point.x, point.y));
+            lines.push(two.makeLine(centre.x, centre.y, guidePoint.x, guidePoint.y));
         }
 
 //        var guide = two.makeCurve(0.0, 0.0, 0.1, 0.3, 0.0, 0.5, -0.5, -0.7, true);
 //        guide.linewidth = 0.05;
-        var guide = two.makeCurve(points, true);
-
+        var guide = two.makeCurve(guidePoints, true);
 
         var group = two.makeGroup(guide);
         group.add(lines);
+        group.noFill();
         group.linewidth = 0.2;
         group.stroke = 'gray';
-        group.translation.set(two.width / 2, two.height / 2);
+//        group.translation.set(two.width / 2, two.height / 2);
 //        group.scale = (two.width / 2);
         //group.scale = 10;
+
+        var dataCurve = two.makeCurve(dataPoints, true);
+        dataCurve.noFill();
+        dataCurve.linewidth = 0.2;
+        dataCurve.stroke = 'red';
+//        dataCurve.translation.set(two.width / 2, two.height / 2);
+
+        var combined = two.makeGroup(group, dataCurve);
+        combined.translation.set(two.width / 2, two.height / 2);
 
 // Bind a function to scale and rotate the group
 // to the animation loop.
