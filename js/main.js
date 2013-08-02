@@ -1,5 +1,5 @@
 $(function() {
-    console.log("BEGINETH THE HACKING");
+    //console.log("BEGINETH THE HACKING");
 
     function toWeightOverTime(data) {
         var parse = d3.time.format("%a, %d %b %Y %H:%M:%S").parse;
@@ -17,7 +17,7 @@ $(function() {
 
         // Make an instance of two and place it on the page.
         var elem = document.getElementById('weight-by-day-spiral-chart');
-        var two = new Two({ width: 800, height: 800 }).appendTo(elem);
+        var two = new Two({ width: 700, height: 700 }).appendTo(elem);
 
 //        var circle = two.makeCircle(-70, 0, 50);
 //        var rect = two.makeRectangle(70, 0, 100, 100);
@@ -34,32 +34,46 @@ $(function() {
 //        group.rotation = Math.PI / 2;
 //        group.scale = 0.75;
 
-        var cycleLength = 10;
-        var turns = (Math.ceil((1.0 * data.length) / cycleLength)).toFixed();
-        var stride = (two.height / 2) / turns;
+        console.dir(data.length);
+        var cycleLength = 7;
+//        var cycleLength = data.length / 2;
+//        var cycleLength = data.length;
+        var turns = Math.ceil((1.0 * data.length) / cycleLength);
+        var stride = ((two.height / 2.0) / turns) / cycleLength;
+        console.dir(cycleLength);
+        console.dir(turns);
+        console.dir(stride);
 
         var points = [];
+        var centre = new Two.Vector(0, 0);
+        var lines = [];
         for(var i = 0; i < data.length; i++) {
-            var r_base = ((1.0 * i) / data.length) * stride;
-            var theta = 2 * Math.PI * (i % cycleLength) / cycleLength;
+            var r_base = (1.0 * i) * stride;
+            var theta = 2 * Math.PI * ((i % cycleLength) / cycleLength);
 
             var x = r_base * Math.cos(theta);
             var y = r_base * Math.sin(theta);
 
             var point = new Two.Vector(x, y);
             points.push(point);
+//            console.dir(point.x);
+//            console.dir(point.y);
+
+            lines.push(two.makeLine(centre.x, centre.y, point.x, point.y));
         }
 
 //        var guide = two.makeCurve(0.0, 0.0, 0.1, 0.3, 0.0, 0.5, -0.5, -0.7, true);
 //        guide.linewidth = 0.05;
         var guide = two.makeCurve(points, true);
-        guide.linewidth = 0.2;
-        guide.stroke = 'orangered';
+
 
         var group = two.makeGroup(guide);
+        group.add(lines);
+        group.linewidth = 0.2;
+        group.stroke = 'gray';
         group.translation.set(two.width / 2, two.height / 2);
 //        group.scale = (two.width / 2);
-        group.scale = 10;
+        //group.scale = 10;
 
 // Bind a function to scale and rotate the group
 // to the animation loop.
