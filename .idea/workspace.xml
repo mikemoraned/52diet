@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a7c967-7aba-4cba-86fa-30707fe8a50e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="52diet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +45,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="68" selection-start="1487" selection-end="1487" vertical-scroll-proportion="0.20582524">
+            <state line="40" column="25" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.27864078">
               <folding />
             </state>
           </provider>
@@ -461,7 +460,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="68" selection-start="1487" selection-end="1487" vertical-scroll-proportion="0.20582524">
+        <state line="40" column="25" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.27864078">
           <folding />
         </state>
       </provider>

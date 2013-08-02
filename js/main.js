@@ -35,10 +35,12 @@ $(function() {
 //        group.scale = 0.75;
 
         console.dir(data.length);
+        var offset = data.length / 2;
+
 //        var cycleLength = 7;
-//        var cycleLength = data.length / 2;
-        var cycleLength = data.length;
-        var turns = Math.ceil((1.0 * data.length) / cycleLength) + 1;
+        var cycleLength = data.length / 2;
+//        var cycleLength = data.length;
+        var turns = Math.ceil((1.0 * (offset + data.length)) / cycleLength) + 1;
         var stride = ((two.height / 2.0) / turns) / cycleLength;
         console.dir(cycleLength);
         console.dir(turns);
@@ -53,11 +55,13 @@ $(function() {
         var dataPoints = [];
         var centre = new Two.Vector(0, 0);
         var lines = [];
-        for(var i = 0; i < data.length; i++) {
+        for(var i = offset; i < (offset + data.length); i++) {
             var r_base = (1.0 * i) * stride;
             var theta = 2 * Math.PI * ((i % cycleLength) / cycleLength);
 
-            var r_offset = (stride * cycleLength) * ((data[i].weight - min_weight) / weight_range);
+            var weight = data[i - offset].weight;
+
+            var r_offset = (stride * cycleLength) * ((weight - min_weight) / weight_range);
             var r_data = r_base + r_offset;
 
             var x_guide = r_base * Math.cos(theta);
@@ -75,7 +79,7 @@ $(function() {
 //            console.dir(point.x);
 //            console.dir(point.y);
 
-            lines.push(two.makeLine(centre.x, centre.y, guidePoint.x, guidePoint.y));
+//            lines.push(two.makeLine(centre.x, centre.y, guidePoint.x, guidePoint.y));
         }
 
 //        var guide = two.makeCurve(0.0, 0.0, 0.1, 0.3, 0.0, 0.5, -0.5, -0.7, true);
@@ -91,7 +95,7 @@ $(function() {
 //        group.scale = (two.width / 2);
         //group.scale = 10;
 
-        var dataCurve = two.makeCurve(dataPoints, true);
+        var dataCurve = two.makePolygon(dataPoints, true);
         dataCurve.noFill();
         dataCurve.linewidth = 0.2;
         dataCurve.stroke = 'red';
