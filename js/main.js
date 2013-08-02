@@ -12,6 +12,29 @@ $(function() {
         return values;
     }
 
+    function makeArc(two, thetaStart, thetaEnd, r) {
+        function thetaRToVector(theta, r) {
+            var x = r * Math.cos(theta);
+            var y = r * Math.sin(theta);
+            return new Two.Vector(x, y);
+        }
+
+        var points = [];
+        var thetaInc = Math.PI / 22.5;
+        for(var theta = thetaStart; theta < thetaEnd; theta += thetaInc) {
+            var x = r * Math.cos(theta);
+            var y = r * Math.sin(theta);
+
+            var point = thetaRToVector(theta, r);
+            points.push(point);
+        }
+
+        var end = thetaRToVector(thetaEnd, r);
+        points.push(end);
+
+        return two.makeCurve(points, true);
+    }
+
     function renderSpiral(json) {
         var data = _.filter(toWeightOverTime(json), function(d) {return d.weight > 50;});
 
@@ -38,7 +61,8 @@ $(function() {
         var offset = data.length / 2;
 
 //        var cycleLength = 7;
-        var cycleLength = data.length / 2;
+        var cycleLength = 14;
+//        var cycleLength = data.length / 2;
 //        var cycleLength = data.length;
         var turns = Math.ceil((1.0 * (offset + data.length)) / cycleLength) + 1;
         var stride = ((two.height / 2.0) / turns) / cycleLength;
@@ -55,13 +79,15 @@ $(function() {
         var dataPoints = [];
         var centre = new Two.Vector(0, 0);
         var lines = [];
+        var arcs = [];
         for(var i = offset; i < (offset + data.length); i++) {
             var r_base = (1.0 * i) * stride;
             var theta = 2 * Math.PI * ((i % cycleLength) / cycleLength);
 
             var weight = data[i - offset].weight;
+            var weight_proportion = ((weight - min_weight) / weight_range);
 
-            var r_offset = (stride * cycleLength) * ((weight - min_weight) / weight_range);
+            var r_offset = (stride * cycleLength) * weight_proportion;
             var r_data = r_base + r_offset;
 
             var x_guide = r_base * Math.cos(theta);
@@ -80,6 +106,12 @@ $(function() {
 //            console.dir(point.y);
 
 //            lines.push(two.makeLine(centre.x, centre.y, guidePoint.x, guidePoint.y));
+            var arc = makeArc(two, theta, theta + (2 * Math.PI * (1.0 / cycleLength)), r_base);
+            arc.miter = 'butt';
+            arc.stroke = 'rgba(128, 0, 0, ' + weight_proportion + ')';
+            arc.linewidth = 20.0;http://localhost:8000/
+            arc.noFill();
+            arcs.push(arc);
         }
 
 //        var guide = two.makeCurve(0.0, 0.0, 0.1, 0.3, 0.0, 0.5, -0.5, -0.7, true);
@@ -97,11 +129,14 @@ $(function() {
 
         var dataCurve = two.makePolygon(dataPoints, true);
         dataCurve.noFill();
-        dataCurve.linewidth = 0.2;
+        dataCurve.linewidth = 0.5;
         dataCurve.stroke = 'red';
 //        dataCurve.translation.set(two.width / 2, two.height / 2);
 
-        var combined = two.makeGroup(group, dataCurve);
+        var dataGroup = two.makeGroup(dataCurve);
+        dataGroup.add(arcs);
+
+        var combined = two.makeGroup(group, dataGroup);
         combined.translation.set(two.width / 2, two.height / 2);
 
 // Bind a function to scale and rotate the group
