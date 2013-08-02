@@ -12,10 +12,12 @@ $(function() {
         return values;
     }
 
-    function renderSpiral() {
+    function renderSpiral(json) {
+        var data = toWeightOverTime(json);
+
         // Make an instance of two and place it on the page.
         var elem = document.getElementById('weight-by-day-spiral-chart');
-        var two = new Two({ width: 400, height: 400 }).appendTo(elem);
+        var two = new Two({ width: 800, height: 800 }).appendTo(elem);
 
 //        var circle = two.makeCircle(-70, 0, 50);
 //        var rect = two.makeRectangle(70, 0, 100, 100);
@@ -32,14 +34,32 @@ $(function() {
 //        group.rotation = Math.PI / 2;
 //        group.scale = 0.75;
 
-        var guide = two.makeCurve(0.0, 0.0, 0.1, 0.3, 0.0, 0.5, -0.5, -0.7, true);
-        guide.linewidth = 0.05;
+        var cycleLength = 10;
+        var turns = (Math.ceil((1.0 * data.length) / cycleLength)).toFixed();
+        var stride = (two.height / 2) / turns;
+
+        var points = [];
+        for(var i = 0; i < data.length; i++) {
+            var r_base = ((1.0 * i) / data.length) * stride;
+            var theta = 2 * Math.PI * (i % cycleLength) / cycleLength;
+
+            var x = r_base * Math.cos(theta);
+            var y = r_base * Math.sin(theta);
+
+            var point = new Two.Vector(x, y);
+            points.push(point);
+        }
+
+//        var guide = two.makeCurve(0.0, 0.0, 0.1, 0.3, 0.0, 0.5, -0.5, -0.7, true);
+//        guide.linewidth = 0.05;
+        var guide = two.makeCurve(points, true);
+        guide.linewidth = 0.2;
         guide.stroke = 'orangered';
 
         var group = two.makeGroup(guide);
         group.translation.set(two.width / 2, two.height / 2);
-        group.scale = (two.width / 2);
-
+//        group.scale = (two.width / 2);
+        group.scale = 10;
 
 // Bind a function to scale and rotate the group
 // to the animation loop.
@@ -113,6 +133,6 @@ $(function() {
 
     d3.json("/js/data/snapshot.json", function(json) {
         //renderChart(json);
-        renderSpiral();
+        renderSpiral(json);
     });
 });
