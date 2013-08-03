@@ -2,46 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a7c967-7aba-4cba-86fa-30707fe8a50e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/build/two.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/build/two.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/component.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/group.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/matrix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/polygon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/renderer/canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/renderer/svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/renderer/webgl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/shape.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/two.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/vector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/curve.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/ellipse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/polygon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/rectangle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/styles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/webgl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/canvas2blob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/qunit/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/qunit/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/requestAnimationFrame.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/resemble.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/stats.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/tween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/underscore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/utils/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/build/two.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/build/two.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/group.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/matrix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/polygon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/renderer/canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/renderer/svg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/renderer/webgl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/shape.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/two.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/vector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/curve.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/ellipse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/polygon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/rectangle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/styles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/svg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/webgl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/canvas2blob.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/qunit/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/qunit/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/requestAnimationFrame.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/resemble.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/stats.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/tween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/utils/build.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/component.json" afterPath="$PROJECT_DIR$/js/component.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="52diet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,7 +74,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="37" selection-start="379" selection-end="379" vertical-scroll-proportion="-5.625">
+            <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -84,7 +83,16 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="26" selection-start="4844" selection-end="4844" vertical-scroll-proportion="0.79611653">
+            <state line="122" column="33" selection-start="4087" selection-end="4087" vertical-scroll-proportion="1.7766991">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="component.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/component.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,8 +112,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/data/snapshot.json" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/component.json" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -230,62 +239,6 @@
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="two.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52diet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52diet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="two.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52diet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52diet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="two.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -332,24 +285,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="min" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52diet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52diet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -523,23 +458,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/two.js/src/two.js">
+    <entry file="file://$PROJECT_DIR$/js/component.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="439" column="14" selection-start="10696" selection-end="10699" vertical-scroll-proportion="0.33266932">
+        <state line="11" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="37" selection-start="379" selection-end="379" vertical-scroll-proportion="-5.625">
+        <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="26" selection-start="4844" selection-end="4844" vertical-scroll-proportion="0.79611653">
+        <state line="122" column="33" selection-start="4087" selection-end="4087" vertical-scroll-proportion="1.7766991">
           <folding />
         </state>
       </provider>
