@@ -16,30 +16,39 @@ $(function() {
         var data = _.filter(toWeightOverTime(json), function(d) {return d.weight > 50;});
 
         var weights = _.pluck(data, 'weight');
-        var min_weight = _.min(weights);
-        var max_weight = _.max(weights);
-        var weight_range = max_weight - min_weight;
+
+        var minWeight = _.min(weights);
+        var maxWeight = _.max(weights);
+        var weightRange = maxWeight - minWeight;
+
+        var weightsComparison = _.take(_.zip(_.rest(weights), weights), weights.length - 1);
+        var weightDiffs = _.map(weightsComparison, function(pair) { return pair[0] - pair[1];});
+        var minWeightDiff = _.min(weightDiffs);
+        var maxWeightDiff = _.max(weightDiffs);
+        var weightDiffRange = maxWeightDiff - minWeightDiff;
 
         return {
             'data' : {
-                'weightAt'     : function(index) {
-                    return data[index];
-                },
                 'weightProportionAt' : function(index) {
-                    return ((weights[index] - min_weight) / weight_range);
+                    return ((weights[index] - minWeight) / weightRange);
+                },
+                'weightDiffProportionAt' : function(index) {
+                    if (index > weightDiffs.length - 1) {
+                        return 0;
+                    }
+                    else {
+                        return ((weightDiffs[index] - minWeightDiff) / weightDiffRange);
+                    }
                 },
                 'summary'      : {
                     'length'       : data.length,
-                    'min_weight'   : min_weight,
-                    'max_weight'   : max_weight,
-                    'weight_range' : weight_range
+                    'min_weight'   : minWeight,
+                    'max_weight'   : maxWeight,
+                    'weight_range' : weightRange
                 }
             },
             'spiral' : {
                 'cycleLength' : ko.observable(7)
-//                'cycleLength' : 7//,
-//                'cycleLength' : data.length / 2//,
-//                'cycleLength' : data.length
             }
         };
     }
@@ -67,7 +76,7 @@ $(function() {
         return two.makeCurve(points, true);
     }
 
-    function buildScene(two, model) {
+    function buildScene(two, model, proportionAt) {
         var offset = model.data.summary.length / 2;
 
         var cycleLength = model.spiral.cycleLength();
@@ -85,7 +94,7 @@ $(function() {
             var r_base = (1.0 * i) * stride;
             var theta = 2 * Math.PI * ((i % cycleLength) / cycleLength);
 
-            var weight_proportion = model.data.weightProportionAt(i - offset);
+            var weight_proportion = proportionAt(i - offset);
 
             var r_offset = (stride * cycleLength) * weight_proportion;
             var r_data = r_base + r_offset;
@@ -131,11 +140,11 @@ $(function() {
         return combined;
     }
 
-    function bindSpiral(model) {
+    function bindSpiral(model, proportionAt) {
         var elem = document.getElementById('weight-by-day-spiral-chart');
         var two = new Two({ width: 700, height: 700 }).appendTo(elem);
 
-        var topLevel = buildScene(two, model);
+        var topLevel = buildScene(two, model, proportionAt);
 
         var rebuildRequired = false;
         model.spiral.cycleLength.subscribe(function() {
@@ -146,14 +155,15 @@ $(function() {
             if (rebuildRequired) {
                 rebuildRequired = false;
                 two.scene.remove(topLevel);
-                topLevel = buildScene(two, model);
+                topLevel = buildScene(two, model, proportionAt);
             }
         }).play();
     }
 
     d3.json("/js/data/snapshot.json", function(json) {
         var model = createModel(json);
-        bindSpiral(model);
+//        bindSpiral(model, model.data.weightProportionAt);
+        bindSpiral(model, model.data.weightDiffProportionAt);
 
         ko.applyBindings(model);
     });

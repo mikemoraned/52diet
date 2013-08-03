@@ -2,45 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a7c967-7aba-4cba-86fa-30707fe8a50e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/build/two.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/build/two.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/component.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/group.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/matrix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/polygon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/renderer/canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/renderer/svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/renderer/webgl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/shape.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/two.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/vector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/curve.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/ellipse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/polygon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/rectangle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/styles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/webgl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/canvas2blob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/qunit/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/qunit/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/requestAnimationFrame.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/resemble.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/stats.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/tween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/underscore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/utils/build.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/component.json" afterPath="$PROJECT_DIR$/js/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="52diet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,7 +38,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="-5.625">
+            <state line="30" column="44" selection-start="910" selection-end="910" vertical-scroll-proportion="-18.75">
               <folding />
             </state>
           </provider>
@@ -83,7 +47,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="33" selection-start="4087" selection-end="4087" vertical-scroll-proportion="1.7766991">
+            <state line="23" column="91" selection-start="766" selection-end="766" vertical-scroll-proportion="0.33495146">
               <folding />
             </state>
           </provider>
@@ -112,9 +76,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/data/snapshot.json" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/component.json" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -150,6 +114,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,16 +264,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,8 +271,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -446,16 +410,14 @@
         <state line="28" column="0" selection-start="528" selection-end="528" vertical-scroll-proportion="0.407767" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/components/knockout.js/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/data/snapshot.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="14233" selection-end="14233" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/knockout.js/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/component.json">
@@ -467,14 +429,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="-5.625">
+        <state line="30" column="44" selection-start="910" selection-end="910" vertical-scroll-proportion="-18.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="33" selection-start="4087" selection-end="4087" vertical-scroll-proportion="1.7766991">
+        <state line="23" column="91" selection-start="766" selection-end="766" vertical-scroll-proportion="0.33495146">
           <folding />
         </state>
       </provider>
