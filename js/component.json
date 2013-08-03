@@ -8,8 +8,8 @@
     "crossfilter": "~1.2.0",
     "dc": "latest",
     "dc.js": "git://github.com/NickQiZhu/dc.js.git#~1.4.0",
-    "two": "~0.2.0",
     "underscore": "~1.5.1",
-    "knockout.js": "~2.3.0"
+    "knockout.js": "~2.3.0",
+    "two.js": "git://github.com/jonobr1/two.js.git#~0.2.0"
   }
 }

@@ -7,7 +7,7 @@
     <script src="js/components/d3/d3.min.js"></script>
     <script src="js/components/crossfilter/crossfilter.min.js"></script>
     <script src="js/components/dc.js/dc.min.js"></script>
-    <script src="js/components/two/build/two.min.js"></script>
+    <script src="js/components/two.js/build/two.min.js"></script>
     <script src="js/components/underscore/underscore-min.js"></script>
     <script src="js/components/knockout.js/knockout.js"></script>
     <style>
@@ -15,21 +15,9 @@
             font: 10px sans-serif;
         }
 
-        .axis path,
-        .axis line {
-            fill: none;
-            stroke: #000;
-            shape-rendering: crispEdges;
-        }
-
-        .x.axis path {
-            display: none;
-        }
-
-        .line {
-            fill: none;
-            stroke: steelblue;
-            stroke-width: 1.5px;
+        #cycleLength {
+            width: 700px;
+            height: 20px;
         }
 
     </style>
@@ -37,13 +25,14 @@
 <body>
     <h1>5:2 data</h1>
 
-    <div id="weight-by-day-chart">
-    </div>
+    <div data-bind="with: spiral">
 
-    <div id="weight-by-day-spiral-chart">
-    </div>
+        <input data-bind="value: cycleLength" id="cycleLength" type="range"/>
 
-    <input id="cycleLength" type="range"/>
+        <div id="weight-by-day-spiral-chart">
+        </div>
+
+    </div>
 
     <script src="js/main.js"></script>
 </body>

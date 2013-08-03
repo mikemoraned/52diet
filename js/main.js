@@ -22,8 +22,6 @@ $(function() {
 
         return {
             'data' : {
-                'all'          : data,
-                'weights'      : weights,
                 'weightAt'     : function(index) {
                     return data[index];
                 },
@@ -38,8 +36,9 @@ $(function() {
                 }
             },
             'spiral' : {
+                'cycleLength' : ko.observable(7)
 //                'cycleLength' : 7//,
-                'cycleLength' : data.length / 2//,
+//                'cycleLength' : data.length / 2//,
 //                'cycleLength' : data.length
             }
         };
@@ -71,7 +70,7 @@ $(function() {
     function buildScene(two, model) {
         var offset = model.data.summary.length / 2;
 
-        var cycleLength = model.spiral.cycleLength;
+        var cycleLength = model.spiral.cycleLength();
         var maxIndex = offset + model.data.summary.length;
         var turns = Math.ceil((1.0 * maxIndex) / cycleLength) + 1;
         var stride = ((two.height / 2.0) / turns) / cycleLength;
@@ -128,21 +127,34 @@ $(function() {
 
         var combined = two.makeGroup(group, dataGroup);
         combined.translation.set(two.width / 2, two.height / 2);
+
+        return combined;
     }
 
     function bindSpiral(model) {
         var elem = document.getElementById('weight-by-day-spiral-chart');
         var two = new Two({ width: 700, height: 700 }).appendTo(elem);
 
-        buildScene(two, model);
+        var topLevel = buildScene(two, model);
+
+        var rebuildRequired = false;
+        model.spiral.cycleLength.subscribe(function() {
+            rebuildRequired = true;
+        });
 
         two.bind('update', function(frameCount) {
-
+            if (rebuildRequired) {
+                rebuildRequired = false;
+                two.scene.remove(topLevel);
+                topLevel = buildScene(two, model);
+            }
         }).play();
     }
 
     d3.json("/js/data/snapshot.json", function(json) {
         var model = createModel(json);
         bindSpiral(model);
+
+        ko.applyBindings(model);
     });
 });
