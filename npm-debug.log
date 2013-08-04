@@ -1,0 +1,1783 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.8.12/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'karma' ]
+2 info using npm@1.1.63
+3 info using node@v0.8.12
+4 verbose read json /usr/local/share/npm/lib/package.json
+5 verbose read json /usr/local/share/npm/lib/package.json
+6 verbose cache add [ 'karma', null ]
+7 silly cache add name=undefined spec="karma" args=["karma",null]
+8 verbose parsed url { pathname: 'karma', path: 'karma', href: 'karma' }
+9 silly lockFile 512423cb-karma karma
+10 verbose lock karma /Users/mxm/.npm/512423cb-karma.lock
+11 silly lockFile 512423cb-karma karma
+12 verbose addNamed [ 'karma', '' ]
+13 verbose addNamed [ null, '' ]
+14 silly lockFile cd7961bb-karma karma@
+15 verbose lock karma@ /Users/mxm/.npm/cd7961bb-karma.lock
+16 silly addNameRange { name: 'karma', range: '', hasData: false }
+17 verbose url raw karma
+18 verbose url resolving [ 'https://registry.npmjs.org/', './karma' ]
+19 verbose url resolved https://registry.npmjs.org/karma
+20 info trying registry request attempt 1 at 17:02:24
+21 verbose etag "8N831JO50F9JGTMTTE3KRVH2A"
+22 http GET https://registry.npmjs.org/karma
+23 http 304 https://registry.npmjs.org/karma
+24 silly registry.get cb [ 304,
+24 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+24 silly registry.get     etag: '"8N831JO50F9JGTMTTE3KRVH2A"',
+24 silly registry.get     date: 'Sun, 04 Aug 2013 15:02:53 GMT',
+24 silly registry.get     'content-length': '0' } ]
+25 verbose etag karma from cache
+26 silly addNameRange number 2 { name: 'karma', range: '', hasData: true }
+27 silly addNameRange versions [ 'karma',
+27 silly addNameRange   [ '0.8.0',
+27 silly addNameRange     '0.9.0-dart',
+27 silly addNameRange     '0.8.1',
+27 silly addNameRange     '0.8.2',
+27 silly addNameRange     '0.8.3',
+27 silly addNameRange     '0.9.0',
+27 silly addNameRange     '0.8.4',
+27 silly addNameRange     '0.9.1',
+27 silly addNameRange     '0.8.5',
+27 silly addNameRange     '0.9.2',
+27 silly addNameRange     '0.9.2-dart',
+27 silly addNameRange     '0.9.3',
+27 silly addNameRange     '0.8.6',
+27 silly addNameRange     '0.9.4',
+27 silly addNameRange     '0.8.7',
+27 silly addNameRange     '0.9.5',
+27 silly addNameRange     '0.9.6',
+27 silly addNameRange     '0.8.8',
+27 silly addNameRange     '0.9.7' ] ]
+28 verbose addNamed [ 'karma', '0.8.8' ]
+29 verbose addNamed [ '0.8.8', '0.8.8' ]
+30 silly lockFile b2900dd3-karma-0-8-8 karma@0.8.8
+31 verbose lock karma@0.8.8 /Users/mxm/.npm/b2900dd3-karma-0-8-8.lock
+32 verbose read json /Users/mxm/.npm/karma/0.8.8/package/package.json
+33 silly lockFile b2900dd3-karma-0-8-8 karma@0.8.8
+34 silly lockFile cd7961bb-karma karma@
+35 silly resolved [ { name: 'karma',
+35 silly resolved     description: 'Spectacular Test Runner for JavaScript.',
+35 silly resolved     homepage: 'http://karma-runner.github.com/',
+35 silly resolved     bugs: { url: 'https://github.com/karma-runner/karma/issues' },
+35 silly resolved     keywords:
+35 silly resolved      [ 'karma',
+35 silly resolved        'spectacular',
+35 silly resolved        'runner',
+35 silly resolved        'testacular',
+35 silly resolved        'js',
+35 silly resolved        'javascript',
+35 silly resolved        'testing',
+35 silly resolved        'test',
+35 silly resolved        'remote',
+35 silly resolved        'execution' ],
+35 silly resolved     author: { name: 'Vojta Jína', email: 'vojta.jina@gmail.com' },
+35 silly resolved     contributors:
+35 silly resolved      [ [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object],
+35 silly resolved        [Object] ],
+35 silly resolved     dependencies:
+35 silly resolved      { 'socket.io': '~0.9.13',
+35 silly resolved        chokidar: '~0.6',
+35 silly resolved        glob: '~3.1.21',
+35 silly resolved        minimatch: '~0.2',
+35 silly resolved        'http-proxy': '~0.10',
+35 silly resolved        optimist: '0.3.5',
+35 silly resolved        'coffee-script': '~1.6',
+35 silly resolved        xmlbuilder: '0.4.2',
+35 silly resolved        rimraf: '~2.1',
+35 silly resolved        q: '~0.9',
+35 silly resolved        LiveScript: '1.0.1',
+35 silly resolved        colors: '0.6.0-1',
+35 silly resolved        dateformat: '1.0.2-1.2.3',
+35 silly resolved        istanbul: '~0.1.40',
+35 silly resolved        lodash: '~1.1',
+35 silly resolved        growly: '~1.1',
+35 silly resolved        pause: '0.0.1',
+35 silly resolved        mime: '~1.2',
+35 silly resolved        log4js: '~0.6.3' },
+35 silly resolved     devDependencies:
+35 silly resolved      { grunt: '~0.4',
+35 silly resolved        'grunt-simple-mocha': 'git://github.com/yaymukund/grunt-simple-mocha.git',
+35 silly resolved        'grunt-contrib-jshint': '~0.3',
+35 silly resolved        mocks: '~0.0.10',
+35 silly resolved        which: '~1.0',
+35 silly resolved        'sinon-chai': '~2.3',
+35 silly resolved        chai: '~1.5',
+35 silly resolved        mocha: '~1.8',
+35 silly resolved        sinon: '~1.6',
+35 silly resolved        'timer-shim': '~0.2',
+35 silly resolved        'chai-as-promised': '~3.2',
+35 silly resolved        'mock-http-response': '~0.1',
+35 silly resolved        qq: '~0.3' },
+35 silly resolved     preferGlobal: true,
+35 silly resolved     repository: { type: 'git', url: 'git://github.com/karma-runner/karma.git' },
+35 silly resolved     main: './lib/index',
+35 silly resolved     bin: { karma: './bin/karma' },
+35 silly resolved     engines: { node: '~0.8 || ~0.10' },
+35 silly resolved     version: '0.8.8',
+35 silly resolved     readme: '# Karma [![Build Status](https://secure.travis-ci.org/karma-runner/karma.png?branch=stable)](http://travis-ci.org/karma-runner/karma) [![Build Status](https://secure.travis-ci.org/karma-runner/karma.png?branch=master)](http://travis-ci.org/karma-runner/karma)\n\nA simple tool that allows you to execute JavaScript code in multiple\n_real_ browsers, powered by [Node.js] and [Socket.io].\n\n> The main purpose of Karma is to make your TDD development easy,\n>  fast, and fun.\n\n\n## When should I use Karma?\n\n* You want to test code in *real* browsers.\n* You want to test code in multiple browsers (desktop, mobile,\n  tablets, etc.).\n* You want to execute your tests locally during development.\n* You want to execute your tests on a continuous integration server.\n* You want to execute your tests on every save.\n* You love your terminal.\n* You don\'t want your (testing) life to suck.\n* You want to use [Istanbul] to automagically generate coverage\n  reports.\n* You want to use [RequireJS] for your source files.\n\n\n## But I still want to use \\_insert testing library\\_\n\nKarma is not a testing framework, neither an assertion library,\nso for that you can use pretty much anything you like. Right now out\nof the box there is support for\n\n* [Mocha]\n* [Jasmine]\n* [QUnit]\n* \\_anything else\\_ Write your own adapter. It\'s not that hard. And we\n  are here to help.\n\n\n## Which Browsers can I use?\n\nAll the major browsers are supported, if you want to know more see the\n[Browsers] page.\n\n\n## I want to use it. Where do I sign?\n\nYou don\'t need to sign anything but here are some resources to help\nyou to get started.\n\n### Obligatory Screencast.\n\nEvery serious project has a screencast, so here is ours.  Just click\n[here] and let the show begin.\n\n### NPM Installation.\n\nIf you have [Node.js] installed, it\'s as simple as\n\n```bash\n$ npm install -g karma\n```\n\nThis will give you the latest stable version available on npm. If you\nwant to live life on the edge you can do so by\n\n```bash\n$ npm install -g karma@canary\n```\n\nThe curious can have a look at the [wiki] articles for\n[Getting Started] and [Versioning].\n\n### Using it.\n\nGo into your project and create a testacular configuration. That is\njust a simple JavaScript or CoffeeScript file that tells Karma\nwhere all the awesomeness of your project are.\n\nYou can find a simple example in\n[test/client/karma.conf.js](https://github.com/karma-runner/karma/blob/master/test/client/karma.conf.js)\nwhich contains most of the options.\n\nTo create your own from scratch there is the `init` command, which\nwill be named `karma.conf.js` by default:\n\n```bash\n$ karma init\n```\nThis will ask you many questions and if you answered them all correct\nyou will be allowed to use Karma.\n\nFor more information on the configuration options see\n[Configuration File Overview].\n\nNow that you have your configuration all that is left to do is to\nstart Karma:\n```bash\n$ karma start\n```\n\nIf you want to run tests manually (without auto watching file changes), you can:\n```bash\n$ karma run\n```\nBut only if you have started the Karma server before.\n\n\n## Why did you create this?\n\nThroughout the development of [AngularJS], we\'ve been using [JSTD] for\ntesting. I really think that JSTD is a great idea. Unfortunately, we\nhad many problems with JSTD, so we decided to write our own test\nrunner based on the same idea. We wanted a simple tool just for\nexecuting JavaScript tests that is both stable and fast. That\'s why we\nuse the awesome [Socket.io] library and [Node.js].\n\n\n## I still don\'t get it. Where can I get help?\n\n* [Wiki]\n* [Mailing List]\n* [Issuetracker]\n* [@JsKarma] on Twitter\n\n## This is so great. I want to help.\n\nSee\n[Contributing.md](https://github.com/karma-runner/karma/blob/master/CONTRIBUTING.md)\nor the [wiki] for more information.\n\n\n## My boss wants a license. So where is it?\n\n### The MIT License\n\n> Copyright (C) 2011-2013 Vojta Jína.\n>\n> Permission is hereby granted, free of charge, to any person\n> obtaining a copy of this software and associated documentation files\n> (the "Software"), to deal in the Software without restriction,\n> including without limitation the rights to use, copy, modify, merge,\n> publish, distribute, sublicense, and/or sell copies of the Software,\n> and to permit persons to whom the Software is furnished to do so,\n> subject to the following conditions:\n>\n> The above copyright notice and this permission notice shall be\n> included in all copies or substantial portions of the Software.\n>\n> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,\n> EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\n> MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\n> NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS\n> BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN\n> ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\n> CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n> SOFTWARE.\n\n\n\n[AngularJS]: http://angularjs.org/\n[JSTD]: http://code.google.com/p/js-test-driver/\n[Socket.io]: http://socket.io/\n[Node.js]: http://nodejs.org/\n[Jasmine]: http://pivotal.github.com/jasmine/\n[Mocha]: http://visionmedia.github.com/mocha/\n[QUnit]: http://qunitjs.com/\n[Semantic Versioning]: http://semver.org/\n[here]: http://www.youtube.com/watch?v=MVw8N3hTfCI\n[installers]: http://nodejs.org/download/\n[wiki]: https://github.com/karma-runner/karma/wiki\n[Wiki]: https://github.com/karma-runner/karma/wiki\n[Getting Started]: https://github.com/karma-runner/karma/wiki/Getting-Started\n[Versioning]: https://github.com/karma-runner/karma/wiki/Versioning\n[Configuration File Overview]: https://github.com/karma-runner/karma/wiki/Configuration-File-Overview\n[Mailing List]: https://groups.google.com/forum/#!forum/karma-users\n[Issuetracker]: https://github.com/karma-runner/karma/issues\n[@JsKarma]: http://twitter.com/JsKarma\n[Browsers]: https://github.com/karma-runner/karma/wiki/Browsers\n[RequireJS]: http://requirejs.org/\n[Istanbul]: https://github.com/gotwarlost/istanbul\n\n',
+35 silly resolved     _id: 'karma@0.8.8',
+35 silly resolved     _from: 'karma' } ]
+36 info install karma@0.8.8 into /usr/local/share/npm/lib
+37 info installOne karma@0.8.8
+38 verbose from cache /Users/mxm/.npm/karma/0.8.8/package/package.json
+39 info /usr/local/share/npm/lib/node_modules/karma unbuild
+40 verbose read json /usr/local/share/npm/lib/node_modules/karma/package.json
+41 verbose tar unpack /Users/mxm/.npm/karma/0.8.8/package.tgz
+42 silly lockFile 3a3f13ea-share-npm-lib-node-modules-karma /usr/local/share/npm/lib/node_modules/karma
+43 verbose lock /usr/local/share/npm/lib/node_modules/karma /Users/mxm/.npm/3a3f13ea-share-npm-lib-node-modules-karma.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry README.md
+47 silly gunzTarPerm extractEntry LICENSE
+48 silly gunzTarPerm extractEntry lib/browser.js
+49 silly gunzTarPerm extractEntry lib/file-list.js
+50 silly gunzTarPerm extractEntry lib/helper.js
+51 silly gunzTarPerm extractEntry lib/index.js
+52 silly gunzTarPerm extractEntry lib/init.js
+53 silly gunzTarPerm extractEntry lib/events.js
+54 silly gunzTarPerm extractEntry lib/watcher.js
+55 silly gunzTarPerm extractEntry lib/cli.js
+56 silly gunzTarPerm extractEntry lib/preprocessor.js
+57 silly gunzTarPerm extractEntry lib/server.js
+58 silly gunzTarPerm extractEntry lib/proxy.js
+59 silly gunzTarPerm extractEntry lib/constants.js
+60 silly gunzTarPerm extractEntry lib/reporter.js
+61 silly gunzTarPerm extractEntry lib/config.js
+62 silly gunzTarPerm extractEntry lib/runner.js
+63 silly gunzTarPerm extractEntry lib/launcher.js
+64 silly gunzTarPerm extractEntry lib/web-server.js
+65 silly gunzTarPerm extractEntry lib/logger.js
+66 silly gunzTarPerm extractEntry lib/reporters/Base.js
+67 silly gunzTarPerm extractEntry lib/reporters/Coverage.js
+68 silly gunzTarPerm extractEntry lib/reporters/Dots.js
+69 silly gunzTarPerm extractEntry lib/reporters/DotsColor.js
+70 silly gunzTarPerm extractEntry lib/reporters/Growl.js
+71 silly gunzTarPerm extractEntry lib/reporters/BaseColor.js
+72 silly gunzTarPerm extractEntry lib/reporters/JUnit.js
+73 silly gunzTarPerm extractEntry lib/reporters/Multi.js
+74 silly gunzTarPerm extractEntry lib/reporters/Progress.js
+75 silly gunzTarPerm extractEntry lib/reporters/ProgressColor.js
+76 silly gunzTarPerm extractEntry lib/reporters/Teamcity.js
+77 silly gunzTarPerm extractEntry lib/reporters/images/error.png
+78 silly gunzTarPerm extractEntry lib/reporters/images/failed.png
+79 silly gunzTarPerm extractEntry lib/reporters/images/success.png
+80 silly gunzTarPerm extractEntry lib/runner.js.orig
+81 silly gunzTarPerm extractEntry lib/preprocessors/Coffee.js
+82 silly gunzTarPerm extractEntry lib/preprocessors/Coverage.js
+83 silly gunzTarPerm extractEntry lib/preprocessors/Html2js.js
+84 silly gunzTarPerm extractEntry lib/preprocessors/Live.js
+85 silly gunzTarPerm extractEntry lib/server.js.orig
+86 silly gunzTarPerm extractEntry lib/launchers/Base.js
+87 silly gunzTarPerm extractEntry lib/launchers/Chrome.js
+88 silly gunzTarPerm extractEntry lib/launchers/ChromeCanary.js
+89 silly gunzTarPerm extractEntry lib/launchers/Firefox.js
+90 silly gunzTarPerm extractEntry lib/launchers/IE.js
+91 silly gunzTarPerm extractEntry lib/launchers/Opera.js
+92 silly gunzTarPerm extractEntry lib/launchers/PhantomJS.js
+93 silly gunzTarPerm extractEntry lib/launchers/Safari.js
+94 silly gunzTarPerm extractEntry CHANGELOG.md
+95 silly gunzTarPerm extractEntry config.template
+96 silly gunzTarPerm extractEntry .mailmap
+97 silly gunzTarPerm extractEntry .gitattributes
+98 silly gunzTarPerm extractEntry adapter/angular-scenario.js
+99 silly gunzTarPerm extractEntry adapter/jasmine.js
+100 silly gunzTarPerm extractEntry adapter/mocha.js
+101 silly gunzTarPerm extractEntry adapter/qunit.js
+102 silly gunzTarPerm extractEntry adapter/require.js
+103 silly gunzTarPerm extractEntry adapter/lib/angular-scenario.js
+104 silly gunzTarPerm extractEntry adapter/lib/jasmine.js
+105 silly gunzTarPerm extractEntry adapter/lib/mocha.js
+106 silly gunzTarPerm extractEntry adapter/lib/qunit.js
+107 silly gunzTarPerm extractEntry adapter/lib/require.js
+108 silly gunzTarPerm extractEntry bin/karma
+109 silly gunzTarPerm extractEntry scripts/validate-commit-msg.js
+110 silly gunzTarPerm extractEntry static/testacular.js
+111 silly gunzTarPerm extractEntry static/client.html
+112 silly gunzTarPerm extractEntry static/context.html
+113 silly gunzTarPerm extractEntry static/debug.html
+114 silly gunzTarPerm extractEntry static/safari.html
+115 silly gunzTarPerm extractEntry test-results.xml
+116 verbose read json /usr/local/share/npm/lib/node_modules/karma/package.json
+117 silly lockFile 3a3f13ea-share-npm-lib-node-modules-karma /usr/local/share/npm/lib/node_modules/karma
+118 info preinstall karma@0.8.8
+119 verbose from cache /usr/local/share/npm/lib/node_modules/karma/package.json
+120 verbose readDependencies using package.json deps
+121 verbose from cache /usr/local/share/npm/lib/node_modules/karma/package.json
+122 verbose readDependencies using package.json deps
+123 verbose cache add [ 'socket.io@~0.9.13', null ]
+124 silly cache add name=undefined spec="socket.io@~0.9.13" args=["socket.io@~0.9.13",null]
+125 verbose parsed url { pathname: 'socket.io@~0.9.13',
+125 verbose parsed url   path: 'socket.io@~0.9.13',
+125 verbose parsed url   href: 'socket.io@~0.9.13' }
+126 silly cache add name="socket.io" spec="~0.9.13" args=["socket.io","~0.9.13"]
+127 verbose parsed url { pathname: '~0.9.13', path: '~0.9.13', href: '~0.9.13' }
+128 verbose addNamed [ 'socket.io', '~0.9.13' ]
+129 verbose addNamed [ null, '>=0.9.13- <0.10.0-' ]
+130 silly lockFile 729f5b40-socket-io-0-9-13 socket.io@~0.9.13
+131 verbose lock socket.io@~0.9.13 /Users/mxm/.npm/729f5b40-socket-io-0-9-13.lock
+132 verbose cache add [ 'chokidar@~0.6', null ]
+133 silly cache add name=undefined spec="chokidar@~0.6" args=["chokidar@~0.6",null]
+134 verbose parsed url { pathname: 'chokidar@~0.6',
+134 verbose parsed url   path: 'chokidar@~0.6',
+134 verbose parsed url   href: 'chokidar@~0.6' }
+135 silly cache add name="chokidar" spec="~0.6" args=["chokidar","~0.6"]
+136 verbose parsed url { pathname: '~0.6', path: '~0.6', href: '~0.6' }
+137 verbose addNamed [ 'chokidar', '~0.6' ]
+138 verbose addNamed [ null, '>=0.6.0- <0.7.0-' ]
+139 silly lockFile 89107558-chokidar-0-6 chokidar@~0.6
+140 verbose lock chokidar@~0.6 /Users/mxm/.npm/89107558-chokidar-0-6.lock
+141 silly addNameRange { name: 'socket.io',
+141 silly addNameRange   range: '>=0.9.13- <0.10.0-',
+141 silly addNameRange   hasData: false }
+142 silly addNameRange { name: 'chokidar', range: '>=0.6.0- <0.7.0-', hasData: false }
+143 verbose cache add [ 'glob@~3.1.21', null ]
+144 silly cache add name=undefined spec="glob@~3.1.21" args=["glob@~3.1.21",null]
+145 verbose parsed url { pathname: 'glob@~3.1.21',
+145 verbose parsed url   path: 'glob@~3.1.21',
+145 verbose parsed url   href: 'glob@~3.1.21' }
+146 silly cache add name="glob" spec="~3.1.21" args=["glob","~3.1.21"]
+147 verbose parsed url { pathname: '~3.1.21', path: '~3.1.21', href: '~3.1.21' }
+148 verbose addNamed [ 'glob', '~3.1.21' ]
+149 verbose addNamed [ null, '>=3.1.21- <3.2.0-' ]
+150 silly lockFile b5074ddc-glob-3-1-21 glob@~3.1.21
+151 verbose lock glob@~3.1.21 /Users/mxm/.npm/b5074ddc-glob-3-1-21.lock
+152 verbose cache add [ 'minimatch@~0.2', null ]
+153 silly cache add name=undefined spec="minimatch@~0.2" args=["minimatch@~0.2",null]
+154 verbose parsed url { pathname: 'minimatch@~0.2',
+154 verbose parsed url   path: 'minimatch@~0.2',
+154 verbose parsed url   href: 'minimatch@~0.2' }
+155 silly cache add name="minimatch" spec="~0.2" args=["minimatch","~0.2"]
+156 verbose parsed url { pathname: '~0.2', path: '~0.2', href: '~0.2' }
+157 verbose addNamed [ 'minimatch', '~0.2' ]
+158 verbose addNamed [ null, '>=0.2.0- <0.3.0-' ]
+159 silly lockFile fe0ddac6-minimatch-0-2 minimatch@~0.2
+160 verbose lock minimatch@~0.2 /Users/mxm/.npm/fe0ddac6-minimatch-0-2.lock
+161 verbose cache add [ 'http-proxy@~0.10', null ]
+162 silly cache add name=undefined spec="http-proxy@~0.10" args=["http-proxy@~0.10",null]
+163 verbose parsed url { pathname: 'http-proxy@~0.10',
+163 verbose parsed url   path: 'http-proxy@~0.10',
+163 verbose parsed url   href: 'http-proxy@~0.10' }
+164 silly cache add name="http-proxy" spec="~0.10" args=["http-proxy","~0.10"]
+165 verbose parsed url { pathname: '~0.10', path: '~0.10', href: '~0.10' }
+166 verbose addNamed [ 'http-proxy', '~0.10' ]
+167 verbose addNamed [ null, '>=0.10.0- <0.11.0-' ]
+168 silly lockFile 6486d2d0-http-proxy-0-10 http-proxy@~0.10
+169 verbose lock http-proxy@~0.10 /Users/mxm/.npm/6486d2d0-http-proxy-0-10.lock
+170 verbose cache add [ 'optimist@0.3.5', null ]
+171 silly cache add name=undefined spec="optimist@0.3.5" args=["optimist@0.3.5",null]
+172 verbose parsed url { pathname: 'optimist@0.3.5',
+172 verbose parsed url   path: 'optimist@0.3.5',
+172 verbose parsed url   href: 'optimist@0.3.5' }
+173 silly cache add name="optimist" spec="0.3.5" args=["optimist","0.3.5"]
+174 verbose parsed url { pathname: '0.3.5', path: '0.3.5', href: '0.3.5' }
+175 verbose addNamed [ 'optimist', '0.3.5' ]
+176 verbose addNamed [ '0.3.5', '0.3.5' ]
+177 silly lockFile 72e2da2d-optimist-0-3-5 optimist@0.3.5
+178 verbose lock optimist@0.3.5 /Users/mxm/.npm/72e2da2d-optimist-0-3-5.lock
+179 verbose cache add [ 'coffee-script@~1.6', null ]
+180 silly cache add name=undefined spec="coffee-script@~1.6" args=["coffee-script@~1.6",null]
+181 verbose parsed url { pathname: 'coffee-script@~1.6',
+181 verbose parsed url   path: 'coffee-script@~1.6',
+181 verbose parsed url   href: 'coffee-script@~1.6' }
+182 silly cache add name="coffee-script" spec="~1.6" args=["coffee-script","~1.6"]
+183 verbose parsed url { pathname: '~1.6', path: '~1.6', href: '~1.6' }
+184 verbose addNamed [ 'coffee-script', '~1.6' ]
+185 verbose addNamed [ null, '>=1.6.0- <1.7.0-' ]
+186 silly lockFile d0c13b8a-coffee-script-1-6 coffee-script@~1.6
+187 verbose lock coffee-script@~1.6 /Users/mxm/.npm/d0c13b8a-coffee-script-1-6.lock
+188 verbose cache add [ 'xmlbuilder@0.4.2', null ]
+189 silly cache add name=undefined spec="xmlbuilder@0.4.2" args=["xmlbuilder@0.4.2",null]
+190 verbose parsed url { pathname: 'xmlbuilder@0.4.2',
+190 verbose parsed url   path: 'xmlbuilder@0.4.2',
+190 verbose parsed url   href: 'xmlbuilder@0.4.2' }
+191 silly cache add name="xmlbuilder" spec="0.4.2" args=["xmlbuilder","0.4.2"]
+192 verbose parsed url { pathname: '0.4.2', path: '0.4.2', href: '0.4.2' }
+193 verbose addNamed [ 'xmlbuilder', '0.4.2' ]
+194 verbose addNamed [ '0.4.2', '0.4.2' ]
+195 silly lockFile b92b370d-xmlbuilder-0-4-2 xmlbuilder@0.4.2
+196 verbose lock xmlbuilder@0.4.2 /Users/mxm/.npm/b92b370d-xmlbuilder-0-4-2.lock
+197 verbose cache add [ 'rimraf@~2.1', null ]
+198 silly cache add name=undefined spec="rimraf@~2.1" args=["rimraf@~2.1",null]
+199 verbose parsed url { pathname: 'rimraf@~2.1',
+199 verbose parsed url   path: 'rimraf@~2.1',
+199 verbose parsed url   href: 'rimraf@~2.1' }
+200 silly cache add name="rimraf" spec="~2.1" args=["rimraf","~2.1"]
+201 verbose parsed url { pathname: '~2.1', path: '~2.1', href: '~2.1' }
+202 verbose addNamed [ 'rimraf', '~2.1' ]
+203 verbose addNamed [ null, '>=2.1.0- <2.2.0-' ]
+204 silly lockFile 37a759a6-rimraf-2-1 rimraf@~2.1
+205 verbose lock rimraf@~2.1 /Users/mxm/.npm/37a759a6-rimraf-2-1.lock
+206 verbose cache add [ 'q@~0.9', null ]
+207 silly cache add name=undefined spec="q@~0.9" args=["q@~0.9",null]
+208 verbose parsed url { pathname: 'q@~0.9', path: 'q@~0.9', href: 'q@~0.9' }
+209 silly cache add name="q" spec="~0.9" args=["q","~0.9"]
+210 verbose parsed url { pathname: '~0.9', path: '~0.9', href: '~0.9' }
+211 verbose addNamed [ 'q', '~0.9' ]
+212 verbose addNamed [ null, '>=0.9.0- <0.10.0-' ]
+213 silly lockFile 81c03ade-q-0-9 q@~0.9
+214 verbose lock q@~0.9 /Users/mxm/.npm/81c03ade-q-0-9.lock
+215 verbose cache add [ 'LiveScript@1.0.1', null ]
+216 silly cache add name=undefined spec="LiveScript@1.0.1" args=["LiveScript@1.0.1",null]
+217 verbose parsed url { pathname: 'LiveScript@1.0.1',
+217 verbose parsed url   path: 'LiveScript@1.0.1',
+217 verbose parsed url   href: 'LiveScript@1.0.1' }
+218 silly cache add name="LiveScript" spec="1.0.1" args=["LiveScript","1.0.1"]
+219 verbose parsed url { pathname: '1.0.1', path: '1.0.1', href: '1.0.1' }
+220 verbose addNamed [ 'LiveScript', '1.0.1' ]
+221 verbose addNamed [ '1.0.1', '1.0.1' ]
+222 silly lockFile 9baf9df9-LiveScript-1-0-1 LiveScript@1.0.1
+223 verbose lock LiveScript@1.0.1 /Users/mxm/.npm/9baf9df9-LiveScript-1-0-1.lock
+224 verbose cache add [ 'colors@0.6.0-1', null ]
+225 silly cache add name=undefined spec="colors@0.6.0-1" args=["colors@0.6.0-1",null]
+226 verbose parsed url { pathname: 'colors@0.6.0-1',
+226 verbose parsed url   path: 'colors@0.6.0-1',
+226 verbose parsed url   href: 'colors@0.6.0-1' }
+227 silly cache add name="colors" spec="0.6.0-1" args=["colors","0.6.0-1"]
+228 verbose parsed url { pathname: '0.6.0-1', path: '0.6.0-1', href: '0.6.0-1' }
+229 verbose addNamed [ 'colors', '0.6.0-1' ]
+230 verbose addNamed [ '0.6.0-1', '0.6.0-1' ]
+231 silly lockFile 02eba27f-colors-0-6-0-1 colors@0.6.0-1
+232 verbose lock colors@0.6.0-1 /Users/mxm/.npm/02eba27f-colors-0-6-0-1.lock
+233 verbose cache add [ 'dateformat@1.0.2-1.2.3', null ]
+234 silly cache add name=undefined spec="dateformat@1.0.2-1.2.3" args=["dateformat@1.0.2-1.2.3",null]
+235 verbose parsed url { pathname: 'dateformat@1.0.2-1.2.3',
+235 verbose parsed url   path: 'dateformat@1.0.2-1.2.3',
+235 verbose parsed url   href: 'dateformat@1.0.2-1.2.3' }
+236 silly cache add name="dateformat" spec="1.0.2-1.2.3" args=["dateformat","1.0.2-1.2.3"]
+237 verbose parsed url { pathname: '1.0.2-1.2.3',
+237 verbose parsed url   path: '1.0.2-1.2.3',
+237 verbose parsed url   href: '1.0.2-1.2.3' }
+238 verbose addNamed [ 'dateformat', '1.0.2-1.2.3' ]
+239 verbose addNamed [ '1.0.2-1.2.3', '1.0.2-1.2.3' ]
+240 silly lockFile 644d6e27-dateformat-1-0-2-1-2-3 dateformat@1.0.2-1.2.3
+241 verbose lock dateformat@1.0.2-1.2.3 /Users/mxm/.npm/644d6e27-dateformat-1-0-2-1-2-3.lock
+242 verbose cache add [ 'istanbul@~0.1.40', null ]
+243 silly cache add name=undefined spec="istanbul@~0.1.40" args=["istanbul@~0.1.40",null]
+244 verbose parsed url { pathname: 'istanbul@~0.1.40',
+244 verbose parsed url   path: 'istanbul@~0.1.40',
+244 verbose parsed url   href: 'istanbul@~0.1.40' }
+245 silly cache add name="istanbul" spec="~0.1.40" args=["istanbul","~0.1.40"]
+246 verbose parsed url { pathname: '~0.1.40', path: '~0.1.40', href: '~0.1.40' }
+247 verbose addNamed [ 'istanbul', '~0.1.40' ]
+248 verbose addNamed [ null, '>=0.1.40- <0.2.0-' ]
+249 silly lockFile 3a7b7621-istanbul-0-1-40 istanbul@~0.1.40
+250 verbose lock istanbul@~0.1.40 /Users/mxm/.npm/3a7b7621-istanbul-0-1-40.lock
+251 silly addNameRange { name: 'glob', range: '>=3.1.21- <3.2.0-', hasData: false }
+252 silly addNameRange { name: 'minimatch', range: '>=0.2.0- <0.3.0-', hasData: false }
+253 silly addNameRange { name: 'http-proxy',
+253 silly addNameRange   range: '>=0.10.0- <0.11.0-',
+253 silly addNameRange   hasData: false }
+254 silly addNameRange { name: 'coffee-script',
+254 silly addNameRange   range: '>=1.6.0- <1.7.0-',
+254 silly addNameRange   hasData: false }
+255 silly addNameRange { name: 'rimraf', range: '>=2.1.0- <2.2.0-', hasData: false }
+256 silly addNameRange { name: 'q', range: '>=0.9.0- <0.10.0-', hasData: false }
+257 silly addNameRange { name: 'istanbul', range: '>=0.1.40- <0.2.0-', hasData: false }
+258 verbose url raw LiveScript/1.0.1
+259 verbose url resolving [ 'https://registry.npmjs.org/', './LiveScript/1.0.1' ]
+260 verbose url resolved https://registry.npmjs.org/LiveScript/1.0.1
+261 info trying registry request attempt 1 at 17:02:54
+262 http GET https://registry.npmjs.org/LiveScript/1.0.1
+263 verbose url raw socket.io
+264 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+265 verbose url resolved https://registry.npmjs.org/socket.io
+266 info trying registry request attempt 1 at 17:02:54
+267 verbose etag "77K6CD0WX0R29DUFSM2PGZ5HN"
+268 http GET https://registry.npmjs.org/socket.io
+269 verbose url raw chokidar
+270 verbose url resolving [ 'https://registry.npmjs.org/', './chokidar' ]
+271 verbose url resolved https://registry.npmjs.org/chokidar
+272 info trying registry request attempt 1 at 17:02:54
+273 verbose etag "7UFSPB9NMK236GM1RYFWNS8NT"
+274 http GET https://registry.npmjs.org/chokidar
+275 verbose cache add [ 'lodash@~1.1', null ]
+276 silly cache add name=undefined spec="lodash@~1.1" args=["lodash@~1.1",null]
+277 verbose parsed url { pathname: 'lodash@~1.1',
+277 verbose parsed url   path: 'lodash@~1.1',
+277 verbose parsed url   href: 'lodash@~1.1' }
+278 silly cache add name="lodash" spec="~1.1" args=["lodash","~1.1"]
+279 verbose parsed url { pathname: '~1.1', path: '~1.1', href: '~1.1' }
+280 verbose addNamed [ 'lodash', '~1.1' ]
+281 verbose addNamed [ null, '>=1.1.0- <1.2.0-' ]
+282 silly lockFile 304390bd-lodash-1-1 lodash@~1.1
+283 verbose lock lodash@~1.1 /Users/mxm/.npm/304390bd-lodash-1-1.lock
+284 verbose cache add [ 'growly@~1.1', null ]
+285 silly cache add name=undefined spec="growly@~1.1" args=["growly@~1.1",null]
+286 verbose parsed url { pathname: 'growly@~1.1',
+286 verbose parsed url   path: 'growly@~1.1',
+286 verbose parsed url   href: 'growly@~1.1' }
+287 silly cache add name="growly" spec="~1.1" args=["growly","~1.1"]
+288 verbose parsed url { pathname: '~1.1', path: '~1.1', href: '~1.1' }
+289 verbose addNamed [ 'growly', '~1.1' ]
+290 verbose addNamed [ null, '>=1.1.0- <1.2.0-' ]
+291 silly lockFile 2a8508a4-growly-1-1 growly@~1.1
+292 verbose lock growly@~1.1 /Users/mxm/.npm/2a8508a4-growly-1-1.lock
+293 verbose cache add [ 'pause@0.0.1', null ]
+294 silly cache add name=undefined spec="pause@0.0.1" args=["pause@0.0.1",null]
+295 verbose parsed url { pathname: 'pause@0.0.1',
+295 verbose parsed url   path: 'pause@0.0.1',
+295 verbose parsed url   href: 'pause@0.0.1' }
+296 silly cache add name="pause" spec="0.0.1" args=["pause","0.0.1"]
+297 verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+298 verbose addNamed [ 'pause', '0.0.1' ]
+299 verbose addNamed [ '0.0.1', '0.0.1' ]
+300 silly lockFile c62fc432-pause-0-0-1 pause@0.0.1
+301 verbose lock pause@0.0.1 /Users/mxm/.npm/c62fc432-pause-0-0-1.lock
+302 verbose cache add [ 'mime@~1.2', null ]
+303 silly cache add name=undefined spec="mime@~1.2" args=["mime@~1.2",null]
+304 verbose parsed url { pathname: 'mime@~1.2', path: 'mime@~1.2', href: 'mime@~1.2' }
+305 silly cache add name="mime" spec="~1.2" args=["mime","~1.2"]
+306 verbose parsed url { pathname: '~1.2', path: '~1.2', href: '~1.2' }
+307 verbose addNamed [ 'mime', '~1.2' ]
+308 verbose addNamed [ null, '>=1.2.0- <1.3.0-' ]
+309 silly lockFile f7091508-mime-1-2 mime@~1.2
+310 verbose lock mime@~1.2 /Users/mxm/.npm/f7091508-mime-1-2.lock
+311 verbose cache add [ 'log4js@~0.6.3', null ]
+312 silly cache add name=undefined spec="log4js@~0.6.3" args=["log4js@~0.6.3",null]
+313 verbose parsed url { pathname: 'log4js@~0.6.3',
+313 verbose parsed url   path: 'log4js@~0.6.3',
+313 verbose parsed url   href: 'log4js@~0.6.3' }
+314 silly cache add name="log4js" spec="~0.6.3" args=["log4js","~0.6.3"]
+315 verbose parsed url { pathname: '~0.6.3', path: '~0.6.3', href: '~0.6.3' }
+316 verbose addNamed [ 'log4js', '~0.6.3' ]
+317 verbose addNamed [ null, '>=0.6.3- <0.7.0-' ]
+318 silly lockFile f3becdd9-log4js-0-6-3 log4js@~0.6.3
+319 verbose lock log4js@~0.6.3 /Users/mxm/.npm/f3becdd9-log4js-0-6-3.lock
+320 verbose url raw glob
+321 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+322 verbose url resolved https://registry.npmjs.org/glob
+323 info trying registry request attempt 1 at 17:02:54
+324 verbose etag "1A5O9TP9AWMGF2IQZP4VBQL47"
+325 http GET https://registry.npmjs.org/glob
+326 verbose url raw xmlbuilder/0.4.2
+327 verbose url resolving [ 'https://registry.npmjs.org/', './xmlbuilder/0.4.2' ]
+328 verbose url resolved https://registry.npmjs.org/xmlbuilder/0.4.2
+329 info trying registry request attempt 1 at 17:02:54
+330 verbose etag "2L04MBKK22X5H0AJTVGF1A209"
+331 http GET https://registry.npmjs.org/xmlbuilder/0.4.2
+332 verbose url raw rimraf
+333 verbose url resolving [ 'https://registry.npmjs.org/', './rimraf' ]
+334 verbose url resolved https://registry.npmjs.org/rimraf
+335 info trying registry request attempt 1 at 17:02:54
+336 verbose etag "50X3LWQDSY1SAULXQ7QRKW4PE"
+337 http GET https://registry.npmjs.org/rimraf
+338 verbose url raw colors/0.6.0-1
+339 verbose url resolving [ 'https://registry.npmjs.org/', './colors/0.6.0-1' ]
+340 verbose url resolved https://registry.npmjs.org/colors/0.6.0-1
+341 info trying registry request attempt 1 at 17:02:55
+342 verbose etag "A256MV3735VB0OHB0WUAUPCB9"
+343 http GET https://registry.npmjs.org/colors/0.6.0-1
+344 verbose url raw dateformat/1.0.2-1.2.3
+345 verbose url resolving [ 'https://registry.npmjs.org/', './dateformat/1.0.2-1.2.3' ]
+346 verbose url resolved https://registry.npmjs.org/dateformat/1.0.2-1.2.3
+347 info trying registry request attempt 1 at 17:02:55
+348 verbose etag "53MGS4758SFBP4J0VMOWHAVRB"
+349 http GET https://registry.npmjs.org/dateformat/1.0.2-1.2.3
+350 verbose url raw http-proxy
+351 verbose url resolving [ 'https://registry.npmjs.org/', './http-proxy' ]
+352 verbose url resolved https://registry.npmjs.org/http-proxy
+353 info trying registry request attempt 1 at 17:02:55
+354 verbose etag "3YNT1Z4ICNRAPSYSY9G4FIFDB"
+355 http GET https://registry.npmjs.org/http-proxy
+356 verbose url raw q
+357 verbose url resolving [ 'https://registry.npmjs.org/', './q' ]
+358 verbose url resolved https://registry.npmjs.org/q
+359 info trying registry request attempt 1 at 17:02:55
+360 verbose etag "AXYP13AF2NJ9S38A2JG34648A"
+361 http GET https://registry.npmjs.org/q
+362 verbose url raw coffee-script
+363 verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script' ]
+364 verbose url resolved https://registry.npmjs.org/coffee-script
+365 info trying registry request attempt 1 at 17:02:55
+366 verbose etag "CHE5VTGJIV6QO30E6X9CNTA0N"
+367 http GET https://registry.npmjs.org/coffee-script
+368 verbose url raw minimatch
+369 verbose url resolving [ 'https://registry.npmjs.org/', './minimatch' ]
+370 verbose url resolved https://registry.npmjs.org/minimatch
+371 info trying registry request attempt 1 at 17:02:55
+372 verbose etag "433GUXE31BY78MEUH5M7CIXOG"
+373 http GET https://registry.npmjs.org/minimatch
+374 silly addNameRange { name: 'lodash', range: '>=1.1.0- <1.2.0-', hasData: false }
+375 verbose url raw optimist/0.3.5
+376 verbose url resolving [ 'https://registry.npmjs.org/', './optimist/0.3.5' ]
+377 verbose url resolved https://registry.npmjs.org/optimist/0.3.5
+378 info trying registry request attempt 1 at 17:02:55
+379 verbose etag "7VTLKGSF8BV0P8PMZG3SDUJ94"
+380 http GET https://registry.npmjs.org/optimist/0.3.5
+381 silly addNameRange { name: 'growly', range: '>=1.1.0- <1.2.0-', hasData: false }
+382 verbose url raw istanbul
+383 verbose url resolving [ 'https://registry.npmjs.org/', './istanbul' ]
+384 verbose url resolved https://registry.npmjs.org/istanbul
+385 info trying registry request attempt 1 at 17:02:55
+386 verbose etag "72ZZG3V2N0JPDLKDVZKGPQTPB"
+387 http GET https://registry.npmjs.org/istanbul
+388 silly addNameRange { name: 'mime', range: '>=1.2.0- <1.3.0-', hasData: false }
+389 silly addNameRange { name: 'log4js', range: '>=0.6.3- <0.7.0-', hasData: false }
+390 verbose url raw growly
+391 verbose url resolving [ 'https://registry.npmjs.org/', './growly' ]
+392 verbose url resolved https://registry.npmjs.org/growly
+393 info trying registry request attempt 1 at 17:02:55
+394 http GET https://registry.npmjs.org/growly
+395 verbose url raw lodash
+396 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+397 verbose url resolved https://registry.npmjs.org/lodash
+398 info trying registry request attempt 1 at 17:02:55
+399 verbose etag "8LI12N35DKTK7FQR5KCIA56FX"
+400 http GET https://registry.npmjs.org/lodash
+401 verbose url raw pause/0.0.1
+402 verbose url resolving [ 'https://registry.npmjs.org/', './pause/0.0.1' ]
+403 verbose url resolved https://registry.npmjs.org/pause/0.0.1
+404 info trying registry request attempt 1 at 17:02:55
+405 verbose etag "EOB5X18A1J6GDBBJPGSXXC6N8"
+406 http GET https://registry.npmjs.org/pause/0.0.1
+407 verbose url raw log4js
+408 verbose url resolving [ 'https://registry.npmjs.org/', './log4js' ]
+409 verbose url resolved https://registry.npmjs.org/log4js
+410 info trying registry request attempt 1 at 17:02:55
+411 http GET https://registry.npmjs.org/log4js
+412 verbose url raw mime
+413 verbose url resolving [ 'https://registry.npmjs.org/', './mime' ]
+414 verbose url resolved https://registry.npmjs.org/mime
+415 info trying registry request attempt 1 at 17:02:55
+416 verbose etag "9BJYZJ4U30HWFNFSOAXY20N78"
+417 http GET https://registry.npmjs.org/mime
+418 http 304 https://registry.npmjs.org/chokidar
+419 silly registry.get cb [ 304,
+419 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+419 silly registry.get     etag: '"7UFSPB9NMK236GM1RYFWNS8NT"',
+419 silly registry.get     date: 'Sun, 04 Aug 2013 15:03:35 GMT',
+419 silly registry.get     'content-length': '0' } ]
+420 verbose etag chokidar from cache
+421 http 304 https://registry.npmjs.org/glob
+422 silly registry.get cb [ 304,
+422 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+422 silly registry.get     etag: '"1A5O9TP9AWMGF2IQZP4VBQL47"',
+422 silly registry.get     date: 'Sun, 04 Aug 2013 15:03:35 GMT',
+422 silly registry.get     'content-length': '0' } ]
+423 verbose etag glob from cache
+424 silly addNameRange number 2 { name: 'chokidar', range: '>=0.6.0- <0.7.0-', hasData: true }
+425 silly addNameRange versions [ 'chokidar',
+425 silly addNameRange   [ '0.1.1',
+425 silly addNameRange     '0.2.0',
+425 silly addNameRange     '0.2.1',
+425 silly addNameRange     '0.2.2',
+425 silly addNameRange     '0.2.3',
+425 silly addNameRange     '0.2.4',
+425 silly addNameRange     '0.2.5',
+425 silly addNameRange     '0.2.6',
+425 silly addNameRange     '0.3.0',
+425 silly addNameRange     '0.4.0',
+425 silly addNameRange     '0.5.0',
+425 silly addNameRange     '0.5.1',
+425 silly addNameRange     '0.5.2',
+425 silly addNameRange     '0.5.3',
+425 silly addNameRange     '0.6.0',
+425 silly addNameRange     '0.6.1',
+425 silly addNameRange     '0.6.2' ] ]
+426 verbose addNamed [ 'chokidar', '0.6.2' ]
+427 verbose addNamed [ '0.6.2', '0.6.2' ]
+428 silly lockFile 31eef98d-chokidar-0-6-2 chokidar@0.6.2
+429 verbose lock chokidar@0.6.2 /Users/mxm/.npm/31eef98d-chokidar-0-6-2.lock
+430 verbose read json /Users/mxm/.npm/chokidar/0.6.2/package/package.json
+431 http 304 https://registry.npmjs.org/xmlbuilder/0.4.2
+432 silly registry.get cb [ 304,
+432 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+432 silly registry.get     etag: '"2L04MBKK22X5H0AJTVGF1A209"',
+432 silly registry.get     date: 'Sun, 04 Aug 2013 15:03:35 GMT',
+432 silly registry.get     'content-length': '0' } ]
+433 verbose etag xmlbuilder/0.4.2 from cache
+434 silly addNameRange number 2 { name: 'glob', range: '>=3.1.21- <3.2.0-', hasData: true }
+435 silly addNameRange versions [ 'glob',
+435 silly addNameRange   [ '1.1.0',
+435 silly addNameRange     '2.0.9',
+435 silly addNameRange     '2.0.8',
+435 silly addNameRange     '2.0.7',
+435 silly addNameRange     '2.1.0',
+435 silly addNameRange     '3.0.0',
+435 silly addNameRange     '3.0.1',
+435 silly addNameRange     '3.1.0',
+435 silly addNameRange     '3.1.1',
+435 silly addNameRange     '3.1.2',
+435 silly addNameRange     '3.1.3',
+435 silly addNameRange     '3.1.4',
+435 silly addNameRange     '3.1.5',
+435 silly addNameRange     '3.1.6',
+435 silly addNameRange     '3.1.7',
+435 silly addNameRange     '3.1.9',
+435 silly addNameRange     '3.1.10',
+435 silly addNameRange     '3.1.11',
+435 silly addNameRange     '3.1.12',
+435 silly addNameRange     '3.1.13',
+435 silly addNameRange     '3.1.14',
+435 silly addNameRange     '3.1.15',
+435 silly addNameRange     '3.1.16',
+435 silly addNameRange     '3.1.17',
+435 silly addNameRange     '3.1.18',
+435 silly addNameRange     '3.1.19',
+435 silly addNameRange     '3.1.20',
+435 silly addNameRange     '3.1.21',
+435 silly addNameRange     '3.2.0',
+435 silly addNameRange     '3.2.1',
+435 silly addNameRange     '3.2.3',
+435 silly addNameRange     '3.2.4',
+435 silly addNameRange     '3.2.5',
+435 silly addNameRange     '3.2.6' ] ]
+436 verbose addNamed [ 'glob', '3.1.21' ]
+437 verbose addNamed [ '3.1.21', '3.1.21' ]
+438 silly lockFile ab465912-glob-3-1-21 glob@3.1.21
+439 verbose lock glob@3.1.21 /Users/mxm/.npm/ab465912-glob-3-1-21.lock
+440 verbose read json /Users/mxm/.npm/glob/3.1.21/package/package.json
+441 verbose read json /Users/mxm/.npm/xmlbuilder/0.4.2/package/package.json
+442 silly lockFile 31eef98d-chokidar-0-6-2 chokidar@0.6.2
+443 silly lockFile 89107558-chokidar-0-6 chokidar@~0.6
+444 silly lockFile b92b370d-xmlbuilder-0-4-2 xmlbuilder@0.4.2
+445 silly lockFile ab465912-glob-3-1-21 glob@3.1.21
+446 silly lockFile b5074ddc-glob-3-1-21 glob@~3.1.21
+447 info retry will retry, error on last attempt: Error: socket hang up
+448 info retry will retry, error on last attempt: Error: socket hang up
+449 info retry will retry, error on last attempt: Error: socket hang up
+450 info retry will retry, error on last attempt: Error: socket hang up
+451 info retry will retry, error on last attempt: Error: socket hang up
+452 http 304 https://registry.npmjs.org/http-proxy
+453 silly registry.get cb [ 304,
+453 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+453 silly registry.get     etag: '"3YNT1Z4ICNRAPSYSY9G4FIFDB"',
+453 silly registry.get     date: 'Sun, 04 Aug 2013 15:03:41 GMT',
+453 silly registry.get     'content-length': '0' } ]
+454 verbose etag http-proxy from cache
+455 silly addNameRange number 2 { name: 'http-proxy',
+455 silly addNameRange   range: '>=0.10.0- <0.11.0-',
+455 silly addNameRange   hasData: true }
+456 silly addNameRange versions [ 'http-proxy',
+456 silly addNameRange   [ '0.5.9',
+456 silly addNameRange     '0.5.10',
+456 silly addNameRange     '0.5.11',
+456 silly addNameRange     '0.6.0',
+456 silly addNameRange     '0.6.1',
+456 silly addNameRange     '0.6.2',
+456 silly addNameRange     '0.6.4',
+456 silly addNameRange     '0.6.5',
+456 silly addNameRange     '0.6.6',
+456 silly addNameRange     '0.7.0',
+456 silly addNameRange     '0.7.2',
+456 silly addNameRange     '0.7.3',
+456 silly addNameRange     '0.7.4',
+456 silly addNameRange     '0.7.5',
+456 silly addNameRange     '0.7.6',
+456 silly addNameRange     '0.8.0',
+456 silly addNameRange     '0.8.1',
+456 silly addNameRange     '0.8.2',
+456 silly addNameRange     '0.8.3',
+456 silly addNameRange     '0.8.4',
+456 silly addNameRange     '0.8.5',
+456 silly addNameRange     '0.8.6',
+456 silly addNameRange     '0.8.7',
+456 silly addNameRange     '0.9.0',
+456 silly addNameRange     '0.9.1',
+456 silly addNameRange     '0.10.0',
+456 silly addNameRange     '0.10.1',
+456 silly addNameRange     '0.10.2',
+456 silly addNameRange     '0.10.3' ] ]
+457 verbose addNamed [ 'http-proxy', '0.10.3' ]
+458 verbose addNamed [ '0.10.3', '0.10.3' ]
+459 silly lockFile 8a2ed421-http-proxy-0-10-3 http-proxy@0.10.3
+460 verbose lock http-proxy@0.10.3 /Users/mxm/.npm/8a2ed421-http-proxy-0-10-3.lock
+461 verbose read json /Users/mxm/.npm/http-proxy/0.10.3/package/package.json
+462 silly lockFile 8a2ed421-http-proxy-0-10-3 http-proxy@0.10.3
+463 silly lockFile 6486d2d0-http-proxy-0-10 http-proxy@~0.10
+464 http 304 https://registry.npmjs.org/coffee-script
+465 silly registry.get cb [ 304,
+465 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+465 silly registry.get     etag: '"CHE5VTGJIV6QO30E6X9CNTA0N"',
+465 silly registry.get     date: 'Sun, 04 Aug 2013 15:03:42 GMT',
+465 silly registry.get     'content-length': '0' } ]
+466 verbose etag coffee-script from cache
+467 silly addNameRange number 2 { name: 'coffee-script',
+467 silly addNameRange   range: '>=1.6.0- <1.7.0-',
+467 silly addNameRange   hasData: true }
+468 silly addNameRange versions [ 'coffee-script',
+468 silly addNameRange   [ '0.7.0',
+468 silly addNameRange     '0.7.1',
+468 silly addNameRange     '0.7.2',
+468 silly addNameRange     '0.9.0',
+468 silly addNameRange     '0.9.1',
+468 silly addNameRange     '0.9.2',
+468 silly addNameRange     '0.9.3',
+468 silly addNameRange     '0.9.4',
+468 silly addNameRange     '0.9.5',
+468 silly addNameRange     '0.9.6',
+468 silly addNameRange     '1.0.0',
+468 silly addNameRange     '1.0.1',
+468 silly addNameRange     '1.1.0',
+468 silly addNameRange     '1.1.1',
+468 silly addNameRange     '1.1.2',
+468 silly addNameRange     '1.1.3',
+468 silly addNameRange     '1.2.0',
+468 silly addNameRange     '1.3.0',
+468 silly addNameRange     '1.3.1',
+468 silly addNameRange     '1.3.2',
+468 silly addNameRange     '1.3.3',
+468 silly addNameRange     '1.4.0',
+468 silly addNameRange     '1.5.0',
+468 silly addNameRange     '1.6.0',
+468 silly addNameRange     '1.6.1',
+468 silly addNameRange     '1.6.2',
+468 silly addNameRange     '1.6.3' ] ]
+469 verbose addNamed [ 'coffee-script', '1.6.3' ]
+470 verbose addNamed [ '1.6.3', '1.6.3' ]
+471 silly lockFile 15ab88ca-coffee-script-1-6-3 coffee-script@1.6.3
+472 verbose lock coffee-script@1.6.3 /Users/mxm/.npm/15ab88ca-coffee-script-1-6-3.lock
+473 verbose read json /Users/mxm/.npm/coffee-script/1.6.3/package/package.json
+474 silly lockFile 15ab88ca-coffee-script-1-6-3 coffee-script@1.6.3
+475 silly lockFile d0c13b8a-coffee-script-1-6 coffee-script@~1.6
+476 http 304 https://registry.npmjs.org/q
+477 silly registry.get cb [ 304,
+477 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+477 silly registry.get     etag: '"AXYP13AF2NJ9S38A2JG34648A"',
+477 silly registry.get     date: 'Sun, 04 Aug 2013 15:03:44 GMT',
+477 silly registry.get     'content-length': '0' } ]
+478 verbose etag q from cache
+479 http 304 https://registry.npmjs.org/minimatch
+480 silly registry.get cb [ 304,
+480 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+480 silly registry.get     etag: '"433GUXE31BY78MEUH5M7CIXOG"',
+480 silly registry.get     date: 'Sun, 04 Aug 2013 15:03:44 GMT',
+480 silly registry.get     'content-length': '0' } ]
+481 verbose etag minimatch from cache
+482 silly addNameRange number 2 { name: 'q', range: '>=0.9.0- <0.10.0-', hasData: true }
+483 silly addNameRange versions [ 'q',
+483 silly addNameRange   [ '0.0.0',
+483 silly addNameRange     '0.0.1',
+483 silly addNameRange     '0.0.2',
+483 silly addNameRange     '0.0.3',
+483 silly addNameRange     '0.1.0',
+483 silly addNameRange     '0.1.1',
+483 silly addNameRange     '0.1.2',
+483 silly addNameRange     '0.1.3',
+483 silly addNameRange     '0.1.4',
+483 silly addNameRange     '0.1.5',
+483 silly addNameRange     '0.1.6',
+483 silly addNameRange     '0.1.7',
+483 silly addNameRange     '0.1.8',
+483 silly addNameRange     '0.1.9',
+483 silly addNameRange     '0.2.0-rc1',
+483 silly addNameRange     '0.2.0',
+483 silly addNameRange     '0.2.1',
+483 silly addNameRange     '0.2.2',
+483 silly addNameRange     '0.2.3',
+483 silly addNameRange     '0.2.4',
+483 silly addNameRange     '0.2.5',
+483 silly addNameRange     '0.2.6',
+483 silly addNameRange     '0.2.7',
+483 silly addNameRange     '0.2.8',
+483 silly addNameRange     '0.2.9',
+483 silly addNameRange     '0.3.0',
+483 silly addNameRange     '0.2.10',
+483 silly addNameRange     '0.4.0',
+483 silly addNameRange     '0.4.1',
+483 silly addNameRange     '0.4.2',
+483 silly addNameRange     '0.4.4',
+483 silly addNameRange     '0.5.0',
+483 silly addNameRange     '0.5.1',
+483 silly addNameRange     '0.5.2',
+483 silly addNameRange     '0.5.3',
+483 silly addNameRange     '0.6.0',
+483 silly addNameRange     '0.7.0',
+483 silly addNameRange     '0.7.1',
+483 silly addNameRange     '0.7.2',
+483 silly addNameRange     '0.8.0',
+483 silly addNameRange     '0.8.1',
+483 silly addNameRange     '0.8.2',
+483 silly addNameRange     '0.8.3',
+483 silly addNameRange     '0.8.4',
+483 silly addNameRange     '0.8.5',
+483 silly addNameRange     '0.8.6',
+483 silly addNameRange     '0.8.7',
+483 silly addNameRange     '0.8.8',
+483 silly addNameRange     '0.8.9',
+483 silly addNameRange     '0.8.10',
+483 silly addNameRange     '0.8.11',
+483 silly addNameRange     '0.8.12',
+483 silly addNameRange     '0.9.0',
+483 silly addNameRange     '0.9.1',
+483 silly addNameRange     '0.9.2',
+483 silly addNameRange     '0.9.3',
+483 silly addNameRange     '0.9.4',
+483 silly addNameRange     '0.9.5',
+483 silly addNameRange     '0.9.6' ] ]
+484 verbose addNamed [ 'q', '0.9.6' ]
+485 verbose addNamed [ '0.9.6', '0.9.6' ]
+486 silly lockFile 82d587b6-q-0-9-6 q@0.9.6
+487 verbose lock q@0.9.6 /Users/mxm/.npm/82d587b6-q-0-9-6.lock
+488 silly addNameRange number 2 { name: 'minimatch', range: '>=0.2.0- <0.3.0-', hasData: true }
+489 silly addNameRange versions [ 'minimatch',
+489 silly addNameRange   [ '0.0.1',
+489 silly addNameRange     '0.0.2',
+489 silly addNameRange     '0.0.4',
+489 silly addNameRange     '0.0.5',
+489 silly addNameRange     '0.1.1',
+489 silly addNameRange     '0.1.2',
+489 silly addNameRange     '0.1.3',
+489 silly addNameRange     '0.1.4',
+489 silly addNameRange     '0.1.5',
+489 silly addNameRange     '0.2.0',
+489 silly addNameRange     '0.2.2',
+489 silly addNameRange     '0.2.3',
+489 silly addNameRange     '0.2.4',
+489 silly addNameRange     '0.2.5',
+489 silly addNameRange     '0.2.6',
+489 silly addNameRange     '0.2.7',
+489 silly addNameRange     '0.2.8',
+489 silly addNameRange     '0.2.9',
+489 silly addNameRange     '0.2.10',
+489 silly addNameRange     '0.2.11',
+489 silly addNameRange     '0.2.12' ] ]
+490 verbose addNamed [ 'minimatch', '0.2.12' ]
+491 verbose addNamed [ '0.2.12', '0.2.12' ]
+492 silly lockFile 16b89810-minimatch-0-2-12 minimatch@0.2.12
+493 verbose lock minimatch@0.2.12 /Users/mxm/.npm/16b89810-minimatch-0-2-12.lock
+494 verbose read json /Users/mxm/.npm/q/0.9.6/package/package.json
+495 verbose read json /Users/mxm/.npm/minimatch/0.2.12/package/package.json
+496 silly lockFile 82d587b6-q-0-9-6 q@0.9.6
+497 silly lockFile 16b89810-minimatch-0-2-12 minimatch@0.2.12
+498 silly lockFile 81c03ade-q-0-9 q@~0.9
+499 silly lockFile fe0ddac6-minimatch-0-2 minimatch@~0.2
+500 info trying registry request attempt 2 at 17:03:47
+501 http GET https://registry.npmjs.org/LiveScript/1.0.1
+502 info trying registry request attempt 2 at 17:03:47
+503 verbose etag "A256MV3735VB0OHB0WUAUPCB9"
+504 http GET https://registry.npmjs.org/colors/0.6.0-1
+505 info trying registry request attempt 2 at 17:03:47
+506 verbose etag "53MGS4758SFBP4J0VMOWHAVRB"
+507 http GET https://registry.npmjs.org/dateformat/1.0.2-1.2.3
+508 info trying registry request attempt 2 at 17:03:47
+509 verbose etag "77K6CD0WX0R29DUFSM2PGZ5HN"
+510 http GET https://registry.npmjs.org/socket.io
+511 info trying registry request attempt 2 at 17:03:47
+512 verbose etag "50X3LWQDSY1SAULXQ7QRKW4PE"
+513 http GET https://registry.npmjs.org/rimraf
+514 http 304 https://registry.npmjs.org/istanbul
+515 silly registry.get cb [ 304,
+515 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+515 silly registry.get     etag: '"72ZZG3V2N0JPDLKDVZKGPQTPB"',
+515 silly registry.get     date: 'Sun, 04 Aug 2013 15:03:48 GMT',
+515 silly registry.get     'content-length': '0' } ]
+516 verbose etag istanbul from cache
+517 silly addNameRange number 2 { name: 'istanbul', range: '>=0.1.40- <0.2.0-', hasData: true }
+518 silly addNameRange versions [ 'istanbul',
+518 silly addNameRange   [ '0.1.0',
+518 silly addNameRange     '0.1.1',
+518 silly addNameRange     '0.1.2',
+518 silly addNameRange     '0.1.3',
+518 silly addNameRange     '0.1.4',
+518 silly addNameRange     '0.1.5',
+518 silly addNameRange     '0.1.6',
+518 silly addNameRange     '0.1.7',
+518 silly addNameRange     '0.1.8',
+518 silly addNameRange     '0.1.9',
+518 silly addNameRange     '0.1.10',
+518 silly addNameRange     '0.1.11',
+518 silly addNameRange     '0.1.12',
+518 silly addNameRange     '0.1.13',
+518 silly addNameRange     '0.1.14',
+518 silly addNameRange     '0.1.15',
+518 silly addNameRange     '0.1.16',
+518 silly addNameRange     '0.1.17',
+518 silly addNameRange     '0.1.18',
+518 silly addNameRange     '0.1.19',
+518 silly addNameRange     '0.1.20',
+518 silly addNameRange     '0.1.21',
+518 silly addNameRange     '0.1.22',
+518 silly addNameRange     '0.1.23',
+518 silly addNameRange     '0.1.24',
+518 silly addNameRange     '0.1.25',
+518 silly addNameRange     '0.1.26',
+518 silly addNameRange     '0.1.27',
+518 silly addNameRange     '0.1.28',
+518 silly addNameRange     '0.1.29',
+518 silly addNameRange     '0.1.30',
+518 silly addNameRange     '0.1.31',
+518 silly addNameRange     '0.1.32',
+518 silly addNameRange     '0.1.33',
+518 silly addNameRange     '0.1.34',
+518 silly addNameRange     '0.1.35',
+518 silly addNameRange     '0.1.36',
+518 silly addNameRange     '0.1.37',
+518 silly addNameRange     '0.1.38',
+518 silly addNameRange     '0.1.39',
+518 silly addNameRange     '0.1.40',
+518 silly addNameRange     '0.1.41',
+518 silly addNameRange     '0.1.42',
+518 silly addNameRange     '0.1.43' ] ]
+519 verbose addNamed [ 'istanbul', '0.1.43' ]
+520 verbose addNamed [ '0.1.43', '0.1.43' ]
+521 silly lockFile 94372fb3-istanbul-0-1-43 istanbul@0.1.43
+522 verbose lock istanbul@0.1.43 /Users/mxm/.npm/94372fb3-istanbul-0-1-43.lock
+523 verbose read json /Users/mxm/.npm/istanbul/0.1.43/package/package.json
+524 silly lockFile 94372fb3-istanbul-0-1-43 istanbul@0.1.43
+525 silly lockFile 3a7b7621-istanbul-0-1-40 istanbul@~0.1.40
+526 http 200 https://registry.npmjs.org/growly
+527 silly registry.get cb [ 200,
+527 silly registry.get   { vary: 'Accept',
+527 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+527 silly registry.get     etag: '"6SSBDHOEQ9PBZU9Y5P4O8WPYX"',
+527 silly registry.get     date: 'Sun, 04 Aug 2013 15:03:51 GMT',
+527 silly registry.get     'content-type': 'application/json',
+527 silly registry.get     'content-length': '20345' } ]
+528 silly addNameRange number 2 { name: 'growly', range: '>=1.1.0- <1.2.0-', hasData: true }
+529 silly addNameRange versions [ 'growly', [ '1.0.0', '1.1.0', '1.1.1' ] ]
+530 verbose addNamed [ 'growly', '1.1.1' ]
+531 verbose addNamed [ '1.1.1', '1.1.1' ]
+532 silly lockFile 4d238e67-growly-1-1-1 growly@1.1.1
+533 verbose lock growly@1.1.1 /Users/mxm/.npm/4d238e67-growly-1-1-1.lock
+534 silly lockFile ffb4ffba-pmjs-org-growly-growly-1-1-1-tgz https://registry.npmjs.org/growly/-/growly-1.1.1.tgz
+535 verbose lock https://registry.npmjs.org/growly/-/growly-1.1.1.tgz /Users/mxm/.npm/ffb4ffba-pmjs-org-growly-growly-1-1-1-tgz.lock
+536 verbose addRemoteTarball [ 'https://registry.npmjs.org/growly/-/growly-1.1.1.tgz',
+536 verbose addRemoteTarball   'eb434a0e56f0241d82864cbfd4112c70911242fa' ]
+537 info retry fetch attempt 1 at 17:03:51
+538 verbose fetch to= /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/tmp.tgz
+539 http GET https://registry.npmjs.org/growly/-/growly-1.1.1.tgz
+540 http 304 https://registry.npmjs.org/optimist/0.3.5
+541 silly registry.get cb [ 304,
+541 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+541 silly registry.get     etag: '"7VTLKGSF8BV0P8PMZG3SDUJ94"',
+541 silly registry.get     date: 'Sun, 04 Aug 2013 15:03:52 GMT',
+541 silly registry.get     'content-length': '0' } ]
+542 verbose etag optimist/0.3.5 from cache
+543 verbose read json /Users/mxm/.npm/optimist/0.3.5/package/package.json
+544 silly lockFile 72e2da2d-optimist-0-3-5 optimist@0.3.5
+545 http 304 https://registry.npmjs.org/pause/0.0.1
+546 silly registry.get cb [ 304,
+546 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+546 silly registry.get     etag: '"EOB5X18A1J6GDBBJPGSXXC6N8"',
+546 silly registry.get     date: 'Sun, 04 Aug 2013 15:04:01 GMT',
+546 silly registry.get     'content-length': '0' } ]
+547 verbose etag pause/0.0.1 from cache
+548 http 304 https://registry.npmjs.org/lodash
+549 silly registry.get cb [ 304,
+549 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+549 silly registry.get     etag: '"8LI12N35DKTK7FQR5KCIA56FX"',
+549 silly registry.get     date: 'Sun, 04 Aug 2013 15:04:01 GMT',
+549 silly registry.get     'content-length': '0' } ]
+550 verbose etag lodash from cache
+551 verbose read json /Users/mxm/.npm/pause/0.0.1/package/package.json
+552 silly addNameRange number 2 { name: 'lodash', range: '>=1.1.0- <1.2.0-', hasData: true }
+553 silly addNameRange versions [ 'lodash',
+553 silly addNameRange   [ '0.1.0',
+553 silly addNameRange     '0.2.0',
+553 silly addNameRange     '0.2.1',
+553 silly addNameRange     '0.2.2',
+553 silly addNameRange     '0.3.0',
+553 silly addNameRange     '0.3.1',
+553 silly addNameRange     '0.3.2',
+553 silly addNameRange     '0.4.0',
+553 silly addNameRange     '0.4.1',
+553 silly addNameRange     '0.4.2',
+553 silly addNameRange     '0.5.0-rc.1',
+553 silly addNameRange     '0.5.0',
+553 silly addNameRange     '0.5.1',
+553 silly addNameRange     '0.5.2',
+553 silly addNameRange     '0.6.0',
+553 silly addNameRange     '0.6.1',
+553 silly addNameRange     '0.7.0',
+553 silly addNameRange     '0.8.0',
+553 silly addNameRange     '0.8.1',
+553 silly addNameRange     '0.8.2',
+553 silly addNameRange     '1.0.1',
+553 silly addNameRange     '0.9.0',
+553 silly addNameRange     '0.9.1',
+553 silly addNameRange     '0.9.2',
+553 silly addNameRange     '0.10.0',
+553 silly addNameRange     '1.0.0-rc.1',
+553 silly addNameRange     '1.0.0-rc.2',
+553 silly addNameRange     '1.0.0-rc.3',
+553 silly addNameRange     '1.0.0',
+553 silly addNameRange     '1.1.0',
+553 silly addNameRange     '1.1.1',
+553 silly addNameRange     '1.2.0',
+553 silly addNameRange     '1.2.1',
+553 silly addNameRange     '1.3.0',
+553 silly addNameRange     '1.3.1' ] ]
+554 verbose addNamed [ 'lodash', '1.1.1' ]
+555 verbose addNamed [ '1.1.1', '1.1.1' ]
+556 silly lockFile 05dd3f50-lodash-1-1-1 lodash@1.1.1
+557 verbose lock lodash@1.1.1 /Users/mxm/.npm/05dd3f50-lodash-1-1-1.lock
+558 verbose read json /Users/mxm/.npm/lodash/1.1.1/package/package.json
+559 silly lockFile c62fc432-pause-0-0-1 pause@0.0.1
+560 silly lockFile 05dd3f50-lodash-1-1-1 lodash@1.1.1
+561 silly lockFile 304390bd-lodash-1-1 lodash@~1.1
+562 http 200 https://registry.npmjs.org/log4js
+563 silly registry.get cb [ 200,
+563 silly registry.get   { vary: 'Accept',
+563 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+563 silly registry.get     etag: '"2U7UJQE0O48QR55W8RZ7T27DE"',
+563 silly registry.get     date: 'Sun, 04 Aug 2013 15:04:19 GMT',
+563 silly registry.get     'content-type': 'application/json',
+563 silly registry.get     'content-length': '153727' } ]
+564 silly addNameRange number 2 { name: 'log4js', range: '>=0.6.3- <0.7.0-', hasData: true }
+565 silly addNameRange versions [ 'log4js',
+565 silly addNameRange   [ '0.1.0',
+565 silly addNameRange     '0.2.0',
+565 silly addNameRange     '0.2.2',
+565 silly addNameRange     '0.2.3',
+565 silly addNameRange     '0.2.4',
+565 silly addNameRange     '0.2.5',
+565 silly addNameRange     '0.2.6',
+565 silly addNameRange     '0.3.0',
+565 silly addNameRange     '0.3.1',
+565 silly addNameRange     '0.3.2',
+565 silly addNameRange     '0.3.3',
+565 silly addNameRange     '0.3.4',
+565 silly addNameRange     '0.3.5',
+565 silly addNameRange     '0.3.6',
+565 silly addNameRange     '0.3.7',
+565 silly addNameRange     '0.3.8',
+565 silly addNameRange     '0.3.9',
+565 silly addNameRange     '0.4.0',
+565 silly addNameRange     '0.4.1',
+565 silly addNameRange     '0.4.2',
+565 silly addNameRange     '0.4.3',
+565 silly addNameRange     '0.5.0',
+565 silly addNameRange     '0.5.1',
+565 silly addNameRange     '0.5.2',
+565 silly addNameRange     '0.5.3',
+565 silly addNameRange     '0.5.4',
+565 silly addNameRange     '0.5.5',
+565 silly addNameRange     '0.5.6',
+565 silly addNameRange     '0.5.7',
+565 silly addNameRange     '0.6.0',
+565 silly addNameRange     '0.6.1',
+565 silly addNameRange     '0.5.8',
+565 silly addNameRange     '0.6.2',
+565 silly addNameRange     '0.6.3',
+565 silly addNameRange     '0.6.4',
+565 silly addNameRange     '0.6.5',
+565 silly addNameRange     '0.6.6',
+565 silly addNameRange     '0.6.7' ] ]
+566 verbose addNamed [ 'log4js', '0.6.7' ]
+567 verbose addNamed [ '0.6.7', '0.6.7' ]
+568 silly lockFile c927a66f-log4js-0-6-7 log4js@0.6.7
+569 verbose lock log4js@0.6.7 /Users/mxm/.npm/c927a66f-log4js-0-6-7.lock
+570 silly lockFile a79616ed-pmjs-org-log4js-log4js-0-6-7-tgz https://registry.npmjs.org/log4js/-/log4js-0.6.7.tgz
+571 verbose lock https://registry.npmjs.org/log4js/-/log4js-0.6.7.tgz /Users/mxm/.npm/a79616ed-pmjs-org-log4js-log4js-0-6-7-tgz.lock
+572 verbose addRemoteTarball [ 'https://registry.npmjs.org/log4js/-/log4js-0.6.7.tgz',
+572 verbose addRemoteTarball   '9a9eaa28ee056071c7a628e629dde2e57362bb6f' ]
+573 info retry fetch attempt 1 at 17:04:23
+574 verbose fetch to= /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628663175-0.4861285141669214/tmp.tgz
+575 http GET https://registry.npmjs.org/log4js/-/log4js-0.6.7.tgz
+576 http 304 https://registry.npmjs.org/mime
+577 silly registry.get cb [ 304,
+577 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+577 silly registry.get     etag: '"9BJYZJ4U30HWFNFSOAXY20N78"',
+577 silly registry.get     date: 'Sun, 04 Aug 2013 15:04:23 GMT',
+577 silly registry.get     'content-length': '0' } ]
+578 verbose etag mime from cache
+579 silly addNameRange number 2 { name: 'mime', range: '>=1.2.0- <1.3.0-', hasData: true }
+580 silly addNameRange versions [ 'mime',
+580 silly addNameRange   [ '1.0.0',
+580 silly addNameRange     '1.1.0',
+580 silly addNameRange     '1.2.1',
+580 silly addNameRange     '1.2.2',
+580 silly addNameRange     '1.2.3',
+580 silly addNameRange     '1.2.4',
+580 silly addNameRange     '1.2.5',
+580 silly addNameRange     '1.2.6',
+580 silly addNameRange     '1.2.7',
+580 silly addNameRange     '1.2.8',
+580 silly addNameRange     '1.2.9',
+580 silly addNameRange     '1.2.10' ] ]
+581 verbose addNamed [ 'mime', '1.2.10' ]
+582 verbose addNamed [ '1.2.10', '1.2.10' ]
+583 silly lockFile 8bcaaa4d-mime-1-2-10 mime@1.2.10
+584 verbose lock mime@1.2.10 /Users/mxm/.npm/8bcaaa4d-mime-1-2-10.lock
+585 verbose read json /Users/mxm/.npm/mime/1.2.10/package/package.json
+586 silly lockFile 8bcaaa4d-mime-1-2-10 mime@1.2.10
+587 silly lockFile f7091508-mime-1-2 mime@~1.2
+588 http 200 https://registry.npmjs.org/LiveScript/1.0.1
+589 silly registry.get cb [ 200,
+589 silly registry.get   { vary: 'Accept',
+589 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+589 silly registry.get     etag: '"3BEBY5DAGGFLQPO6N2GOVZ5G8"',
+589 silly registry.get     date: 'Sun, 04 Aug 2013 15:04:28 GMT',
+589 silly registry.get     'content-type': 'application/json',
+589 silly registry.get     'content-length': '2071' } ]
+590 silly lockFile 64e590bc--LiveScript-LiveScript-1-0-1-tgz https://registry.npmjs.org/LiveScript/-/LiveScript-1.0.1.tgz
+591 verbose lock https://registry.npmjs.org/LiveScript/-/LiveScript-1.0.1.tgz /Users/mxm/.npm/64e590bc--LiveScript-LiveScript-1-0-1-tgz.lock
+592 verbose addRemoteTarball [ 'https://registry.npmjs.org/LiveScript/-/LiveScript-1.0.1.tgz',
+592 verbose addRemoteTarball   'fd314990e5d75010425789f525a67531b5a0b143' ]
+593 info retry fetch attempt 1 at 17:04:29
+594 verbose fetch to= /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628669158-0.1747934501618147/tmp.tgz
+595 http GET https://registry.npmjs.org/LiveScript/-/LiveScript-1.0.1.tgz
+596 error fetch failed https://registry.npmjs.org/growly/-/growly-1.1.1.tgz
+597 info retry will retry, error on last attempt: Error: socket hang up
+598 info retry will retry, error on last attempt: Error: socket hang up
+599 info retry will retry, error on last attempt: Error: socket hang up
+600 info retry will retry, error on last attempt: Error: socket hang up
+601 info retry will retry, error on last attempt: Error: socket hang up
+602 http 200 https://registry.npmjs.org/LiveScript/-/LiveScript-1.0.1.tgz
+603 http 200 https://registry.npmjs.org/log4js/-/log4js-0.6.7.tgz
+604 silly shasum updated bytes 40960
+605 silly shasum updated bytes 37750
+606 info shasum fd314990e5d75010425789f525a67531b5a0b143
+606 info shasum /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628669158-0.1747934501618147/tmp.tgz
+607 verbose tar unpack /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628669158-0.1747934501618147/tmp.tgz
+608 silly lockFile 4ec16aa6-69158-0-1747934501618147-package /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628669158-0.1747934501618147/package
+609 verbose lock /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628669158-0.1747934501618147/package /Users/mxm/.npm/4ec16aa6-69158-0-1747934501618147-package.lock
+610 silly gunzTarPerm modes [ '755', '644' ]
+611 silly gunzTarPerm extractEntry package.json
+612 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+613 silly gunzTarPerm extractEntry README.md
+614 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+615 silly gunzTarPerm extractEntry LICENSE
+616 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+617 silly gunzTarPerm extractEntry lib/lexer.js
+618 silly gunzTarPerm modified mode [ 'lib/lexer.js', 438, 420 ]
+619 silly gunzTarPerm extractEntry lib/ast.js
+620 silly gunzTarPerm modified mode [ 'lib/ast.js', 438, 420 ]
+621 silly gunzTarPerm extractEntry lib/optparse.js
+622 silly gunzTarPerm modified mode [ 'lib/optparse.js', 438, 420 ]
+623 silly gunzTarPerm extractEntry lib/parser.js
+624 silly gunzTarPerm modified mode [ 'lib/parser.js', 438, 420 ]
+625 silly gunzTarPerm extractEntry lib/command.js
+626 silly gunzTarPerm modified mode [ 'lib/command.js', 511, 493 ]
+627 silly gunzTarPerm extractEntry lib/livescript.js
+628 silly gunzTarPerm modified mode [ 'lib/livescript.js', 438, 420 ]
+629 silly gunzTarPerm extractEntry lib/slake.js
+630 silly gunzTarPerm modified mode [ 'lib/slake.js', 511, 493 ]
+631 silly gunzTarPerm extractEntry lib/index.js
+632 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+633 silly gunzTarPerm extractEntry lib/grammar.js
+634 silly gunzTarPerm modified mode [ 'lib/grammar.js', 438, 420 ]
+635 silly gunzTarPerm extractEntry lib/lang-ls.js
+636 silly gunzTarPerm modified mode [ 'lib/lang-ls.js', 438, 420 ]
+637 silly gunzTarPerm extractEntry lib/browser.js
+638 silly gunzTarPerm modified mode [ 'lib/browser.js', 438, 420 ]
+639 silly gunzTarPerm extractEntry lib/node.js
+640 silly gunzTarPerm modified mode [ 'lib/node.js', 438, 420 ]
+641 silly gunzTarPerm extractEntry lib/mode-ls.js
+642 silly gunzTarPerm modified mode [ 'lib/mode-ls.js', 438, 420 ]
+643 silly gunzTarPerm extractEntry bin/slake
+644 silly gunzTarPerm modified mode [ 'bin/slake', 511, 493 ]
+645 silly gunzTarPerm extractEntry bin/livescript
+646 silly gunzTarPerm modified mode [ 'bin/livescript', 511, 493 ]
+647 verbose read json /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628669158-0.1747934501618147/package/package.json
+648 silly lockFile 4ec16aa6-69158-0-1747934501618147-package /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628669158-0.1747934501618147/package
+649 verbose from cache /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628669158-0.1747934501618147/package/package.json
+650 verbose tar pack [ '/Users/mxm/.npm/LiveScript/1.0.1/package.tgz',
+650 verbose tar pack   '/var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628669158-0.1747934501618147/package' ]
+651 verbose tarball /Users/mxm/.npm/LiveScript/1.0.1/package.tgz
+652 verbose folder /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628669158-0.1747934501618147/package
+653 silly lockFile 2cb8bdfb-npm-LiveScript-1-0-1-package-tgz /Users/mxm/.npm/LiveScript/1.0.1/package.tgz
+654 verbose lock /Users/mxm/.npm/LiveScript/1.0.1/package.tgz /Users/mxm/.npm/2cb8bdfb-npm-LiveScript-1-0-1-package-tgz.lock
+655 silly shasum updated bytes 32768
+656 silly shasum updated bytes 40960
+657 silly shasum updated bytes 36864
+658 silly shasum updated bytes 11473
+659 info shasum 9a9eaa28ee056071c7a628e629dde2e57362bb6f
+659 info shasum /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628663175-0.4861285141669214/tmp.tgz
+660 verbose tar unpack /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628663175-0.4861285141669214/tmp.tgz
+661 silly lockFile b5b53c08-63175-0-4861285141669214-package /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628663175-0.4861285141669214/package
+662 verbose lock /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628663175-0.4861285141669214/package /Users/mxm/.npm/b5b53c08-63175-0-4861285141669214-package.lock
+663 silly gunzTarPerm modes [ '755', '644' ]
+664 silly gunzTarPerm extractEntry package.json
+665 silly gunzTarPerm extractEntry .npmignore
+666 silly gunzTarPerm extractEntry README.md
+667 silly gunzTarPerm extractEntry lib/connect-logger.js
+668 silly gunzTarPerm extractEntry lib/date_format.js
+669 silly gunzTarPerm extractEntry lib/debug.js
+670 silly gunzTarPerm extractEntry lib/layouts.js
+671 silly gunzTarPerm extractEntry lib/levels.js
+672 silly gunzTarPerm extractEntry lib/log4js.js
+673 silly gunzTarPerm extractEntry lib/logger.js
+674 silly gunzTarPerm extractEntry lib/appenders/console.js
+675 silly gunzTarPerm extractEntry lib/appenders/dateFile.js
+676 silly gunzTarPerm extractEntry lib/appenders/file.js
+677 silly gunzTarPerm extractEntry lib/appenders/gelf.js
+678 silly gunzTarPerm extractEntry lib/appenders/hookio.js
+679 silly gunzTarPerm extractEntry lib/appenders/logLevelFilter.js
+680 silly gunzTarPerm extractEntry lib/appenders/multiprocess.js
+681 silly gunzTarPerm extractEntry lib/appenders/smtp.js
+682 silly gunzTarPerm extractEntry lib/log4js.json
+683 silly gunzTarPerm extractEntry lib/streams/BaseRollingFileStream.js
+684 silly gunzTarPerm extractEntry lib/streams/DateRollingFileStream.js
+685 silly gunzTarPerm extractEntry lib/streams/RollingFileStream.js
+686 silly gunzTarPerm extractEntry lib/streams/index.js
+687 silly gunzTarPerm extractEntry .travis.yml
+688 silly gunzTarPerm extractEntry .jshintrc
+689 silly gunzTarPerm extractEntry examples/example-connect-logger.js
+690 silly gunzTarPerm extractEntry examples/example-socket.js
+691 silly gunzTarPerm extractEntry examples/example.js
+692 silly gunzTarPerm extractEntry examples/fromreadme.js
+693 silly gunzTarPerm extractEntry examples/log-rolling.js
+694 silly gunzTarPerm extractEntry examples/memory-test.js
+695 silly gunzTarPerm extractEntry examples/patternLayout-tokens.js
+696 silly gunzTarPerm extractEntry examples/smtp-appender.js
+697 silly gunzTarPerm extractEntry .bob.json
+698 silly gunzTarPerm extractEntry .bob/instrumented/lib/connect-logger.js
+699 silly gunzTarPerm extractEntry .bob/instrumented/lib/date_format.js
+700 silly gunzTarPerm extractEntry .bob/instrumented/lib/debug.js
+701 silly gunzTarPerm extractEntry .bob/instrumented/lib/layouts.js
+702 silly gunzTarPerm extractEntry .bob/instrumented/lib/levels.js
+703 silly gunzTarPerm extractEntry .bob/instrumented/lib/log4js.js
+704 silly gunzTarPerm extractEntry .bob/instrumented/lib/logger.js
+705 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/console.js
+706 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/dateFile.js
+707 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/file.js
+708 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/gelf.js
+709 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/hookio.js
+710 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/logLevelFilter.js
+711 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/multiprocess.js
+712 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/smtp.js
+713 silly gunzTarPerm extractEntry .bob/instrumented/lib/log4js.json
+714 silly gunzTarPerm extractEntry .bob/instrumented/lib/streams/BaseRollingFileStream.js
+715 silly gunzTarPerm extractEntry .bob/instrumented/lib/streams/DateRollingFileStream.js
+716 silly gunzTarPerm extractEntry .bob/instrumented/lib/streams/RollingFileStream.js
+717 silly gunzTarPerm extractEntry .bob/instrumented/lib/streams/index.js
+718 silly gunzTarPerm extractEntry .bob/instrumented/test/configuration-test.js
+719 silly gunzTarPerm extractEntry .bob/instrumented/test/fileAppender-test.js
+720 silly gunzTarPerm extractEntry .bob/instrumented/test/gelfAppender-test.js
+721 silly gunzTarPerm extractEntry .bob/instrumented/test/global-log-level-test.js
+722 silly gunzTarPerm extractEntry .bob/instrumented/test/debug-test.js
+723 silly gunzTarPerm extractEntry .bob/instrumented/test/layouts-test.js
+724 silly gunzTarPerm extractEntry .bob/instrumented/test/levels-test.js
+725 silly gunzTarPerm extractEntry .bob/instrumented/test/configureNoLevels-test.js
+726 silly gunzTarPerm extractEntry .bob/instrumented/test/setLevel-asymmetry-test.js
+727 silly gunzTarPerm extractEntry .bob/instrumented/test/logLevelFilter-test.js
+728 silly gunzTarPerm extractEntry .bob/instrumented/test/date_format-test.js
+729 silly gunzTarPerm extractEntry .bob/instrumented/test/logger-test.js
+730 silly gunzTarPerm extractEntry .bob/instrumented/test/dateFileAppender-test.js
+731 silly gunzTarPerm extractEntry .bob/instrumented/test/logging-test.js
+732 silly gunzTarPerm extractEntry .bob/instrumented/test/smtpAppender-test.js
+733 silly gunzTarPerm extractEntry .bob/instrumented/test/multiprocess-test.js
+734 silly gunzTarPerm extractEntry .bob/instrumented/test/consoleAppender-test.js
+735 silly gunzTarPerm extractEntry .bob/instrumented/test/nolog-test.js
+736 silly gunzTarPerm extractEntry .bob/instrumented/test/connect-logger-test.js
+737 silly gunzTarPerm extractEntry .bob/instrumented/test/reloadConfiguration-test.js
+738 silly gunzTarPerm extractEntry .bob/instrumented/test/hookioAppender-test.js
+739 silly gunzTarPerm extractEntry .bob/instrumented/test/log-abspath-test.js
+740 silly gunzTarPerm extractEntry .bob/instrumented/test/log4js.json
+741 silly gunzTarPerm extractEntry .bob/instrumented/test/date-file-test
+742 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/BaseRollingFileStream-test.js
+743 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/rollingFileStream-test.js
+744 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/DateRollingFileStream-test.js
+745 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-date-rolling-file-stream-32013-05-04
+746 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-file-stream
+747 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-file-stream-write-less
+748 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-file-stream-write-more
+749 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-file-stream-write-more.1
+750 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.5
+751 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.0
+752 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.1
+753 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.11
+754 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.2
+755 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.20
+756 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.3
+757 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.4
+758 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files
+759 silly gunzTarPerm extractEntry .bob/instrumented/test/with-dateFile.json
+760 silly gunzTarPerm extractEntry .bob/instrumented/test/with-log-rolling.json
+761 silly gunzTarPerm extractEntry .bob/instrumented/test/with-logLevelFilter.json
+762 silly gunzTarPerm extractEntry .bob/report/coverage.out
+763 silly gunzTarPerm extractEntry .bob/report/lint.out
+764 silly gunzTarPerm extractEntry test/configuration-test.js
+765 silly gunzTarPerm extractEntry test/fileAppender-test.js
+766 silly gunzTarPerm extractEntry test/gelfAppender-test.js
+767 silly gunzTarPerm extractEntry test/global-log-level-test.js
+768 silly gunzTarPerm extractEntry test/debug-test.js
+769 silly gunzTarPerm extractEntry test/layouts-test.js
+770 silly gunzTarPerm extractEntry test/levels-test.js
+771 silly gunzTarPerm extractEntry test/configureNoLevels-test.js
+772 silly gunzTarPerm extractEntry test/setLevel-asymmetry-test.js
+773 silly gunzTarPerm extractEntry test/logLevelFilter-test.js
+774 silly gunzTarPerm extractEntry test/date_format-test.js
+775 silly gunzTarPerm extractEntry test/logger-test.js
+776 silly gunzTarPerm extractEntry test/dateFileAppender-test.js
+777 silly gunzTarPerm extractEntry test/logging-test.js
+778 silly gunzTarPerm extractEntry test/smtpAppender-test.js
+779 silly gunzTarPerm extractEntry test/multiprocess-test.js
+780 silly gunzTarPerm extractEntry test/consoleAppender-test.js
+781 silly gunzTarPerm extractEntry test/nolog-test.js
+782 silly gunzTarPerm extractEntry test/connect-logger-test.js
+783 silly gunzTarPerm extractEntry test/reloadConfiguration-test.js
+784 silly gunzTarPerm extractEntry test/hookioAppender-test.js
+785 silly gunzTarPerm extractEntry test/log-abspath-test.js
+786 silly gunzTarPerm extractEntry test/log4js.json
+787 silly gunzTarPerm extractEntry test/date-file-test
+788 silly gunzTarPerm extractEntry test/streams/BaseRollingFileStream-test.js
+789 silly gunzTarPerm extractEntry test/streams/rollingFileStream-test.js
+790 silly gunzTarPerm extractEntry test/streams/DateRollingFileStream-test.js
+791 silly gunzTarPerm extractEntry test/streams/test-date-rolling-file-stream-32013-05-04
+792 silly gunzTarPerm extractEntry test/streams/test-rolling-file-stream
+793 silly gunzTarPerm extractEntry test/streams/test-rolling-file-stream-write-less
+794 silly gunzTarPerm extractEntry test/streams/test-rolling-file-stream-write-more
+795 silly gunzTarPerm extractEntry test/streams/test-rolling-file-stream-write-more.1
+796 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.5
+797 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.0
+798 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.1
+799 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.11
+800 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.2
+801 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.20
+802 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.3
+803 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.4
+804 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files
+805 silly gunzTarPerm extractEntry test/with-dateFile.json
+806 silly gunzTarPerm extractEntry test/with-log-rolling.json
+807 silly gunzTarPerm extractEntry test/with-logLevelFilter.json
+808 silly gunzTarPerm extractEntry test0
+809 silly gunzTarPerm extractEntry test1
+810 silly gunzTarPerm extractEntry test2
+811 silly gunzTarPerm extractEntry test3
+812 silly gunzTarPerm extractEntry test4
+813 silly lockFile 2cb8bdfb-npm-LiveScript-1-0-1-package-tgz /Users/mxm/.npm/LiveScript/1.0.1/package.tgz
+814 silly lockFile 8c0182dd-mxm-npm-LiveScript-1-0-1-package /Users/mxm/.npm/LiveScript/1.0.1/package
+815 verbose lock /Users/mxm/.npm/LiveScript/1.0.1/package /Users/mxm/.npm/8c0182dd-mxm-npm-LiveScript-1-0-1-package.lock
+816 silly lockFile 8c0182dd-mxm-npm-LiveScript-1-0-1-package /Users/mxm/.npm/LiveScript/1.0.1/package
+817 verbose tar unpack /Users/mxm/.npm/LiveScript/1.0.1/package.tgz
+818 silly lockFile 8c0182dd-mxm-npm-LiveScript-1-0-1-package /Users/mxm/.npm/LiveScript/1.0.1/package
+819 verbose lock /Users/mxm/.npm/LiveScript/1.0.1/package /Users/mxm/.npm/8c0182dd-mxm-npm-LiveScript-1-0-1-package.lock
+820 silly gunzTarPerm modes [ '755', '644' ]
+821 silly gunzTarPerm extractEntry package.json
+822 silly gunzTarPerm extractEntry README.md
+823 silly gunzTarPerm extractEntry LICENSE
+824 silly gunzTarPerm extractEntry bin/livescript
+825 silly gunzTarPerm extractEntry bin/slake
+826 silly gunzTarPerm extractEntry lib/ast.js
+827 silly gunzTarPerm extractEntry lib/grammar.js
+828 silly gunzTarPerm extractEntry lib/index.js
+829 silly gunzTarPerm extractEntry lib/lang-ls.js
+830 silly gunzTarPerm extractEntry lib/command.js
+831 silly gunzTarPerm extractEntry lib/livescript.js
+832 silly gunzTarPerm extractEntry lib/mode-ls.js
+833 silly gunzTarPerm extractEntry lib/node.js
+834 silly gunzTarPerm extractEntry lib/optparse.js
+835 silly gunzTarPerm extractEntry lib/parser.js
+836 silly gunzTarPerm extractEntry lib/browser.js
+837 silly gunzTarPerm extractEntry lib/slake.js
+838 silly gunzTarPerm extractEntry lib/lexer.js
+839 info retry fetch attempt 2 at 17:04:45
+840 verbose fetch to= /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/tmp.tgz
+841 http GET https://registry.npmjs.org/growly/-/growly-1.1.1.tgz
+842 verbose read json /Users/mxm/.npm/LiveScript/1.0.1/package/package.json
+843 silly lockFile 8c0182dd-mxm-npm-LiveScript-1-0-1-package /Users/mxm/.npm/LiveScript/1.0.1/package
+844 silly shasum updated bytes 40960
+845 silly shasum updated bytes 38015
+846 info shasum d2ede1f27f8ab4f543681b20f442f7becc73f4c1
+846 info shasum /Users/mxm/.npm/LiveScript/1.0.1/package.tgz
+847 verbose from cache /Users/mxm/.npm/LiveScript/1.0.1/package/package.json
+848 verbose chmod /Users/mxm/.npm/LiveScript/1.0.1/package.tgz 644
+849 verbose chown /Users/mxm/.npm/LiveScript/1.0.1/package.tgz [ 501, 80 ]
+850 silly lockFile 64e590bc--LiveScript-LiveScript-1-0-1-tgz https://registry.npmjs.org/LiveScript/-/LiveScript-1.0.1.tgz
+851 silly lockFile 9baf9df9-LiveScript-1-0-1 LiveScript@1.0.1
+852 verbose read json /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628663175-0.4861285141669214/package/package.json
+853 silly lockFile b5b53c08-63175-0-4861285141669214-package /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628663175-0.4861285141669214/package
+854 verbose from cache /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628663175-0.4861285141669214/package/package.json
+855 verbose tar pack [ '/Users/mxm/.npm/log4js/0.6.7/package.tgz',
+855 verbose tar pack   '/var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628663175-0.4861285141669214/package' ]
+856 verbose tarball /Users/mxm/.npm/log4js/0.6.7/package.tgz
+857 verbose folder /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628663175-0.4861285141669214/package
+858 silly lockFile 19760786-mxm-npm-log4js-0-6-7-package-tgz /Users/mxm/.npm/log4js/0.6.7/package.tgz
+859 verbose lock /Users/mxm/.npm/log4js/0.6.7/package.tgz /Users/mxm/.npm/19760786-mxm-npm-log4js-0-6-7-package-tgz.lock
+860 silly lockFile 19760786-mxm-npm-log4js-0-6-7-package-tgz /Users/mxm/.npm/log4js/0.6.7/package.tgz
+861 silly lockFile c96f934a-ers-mxm-npm-log4js-0-6-7-package /Users/mxm/.npm/log4js/0.6.7/package
+862 verbose lock /Users/mxm/.npm/log4js/0.6.7/package /Users/mxm/.npm/c96f934a-ers-mxm-npm-log4js-0-6-7-package.lock
+863 silly lockFile c96f934a-ers-mxm-npm-log4js-0-6-7-package /Users/mxm/.npm/log4js/0.6.7/package
+864 verbose tar unpack /Users/mxm/.npm/log4js/0.6.7/package.tgz
+865 silly lockFile c96f934a-ers-mxm-npm-log4js-0-6-7-package /Users/mxm/.npm/log4js/0.6.7/package
+866 verbose lock /Users/mxm/.npm/log4js/0.6.7/package /Users/mxm/.npm/c96f934a-ers-mxm-npm-log4js-0-6-7-package.lock
+867 silly gunzTarPerm modes [ '755', '644' ]
+868 silly gunzTarPerm extractEntry package.json
+869 silly gunzTarPerm extractEntry .npmignore
+870 silly gunzTarPerm extractEntry README.md
+871 silly gunzTarPerm extractEntry .bob/instrumented/lib/connect-logger.js
+872 silly gunzTarPerm extractEntry .bob/instrumented/lib/date_format.js
+873 silly gunzTarPerm extractEntry .bob/instrumented/lib/debug.js
+874 silly gunzTarPerm extractEntry .bob/instrumented/lib/layouts.js
+875 silly gunzTarPerm extractEntry .bob/instrumented/lib/levels.js
+876 silly gunzTarPerm extractEntry .bob/instrumented/lib/log4js.js
+877 silly gunzTarPerm extractEntry .bob/instrumented/lib/logger.js
+878 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/console.js
+879 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/dateFile.js
+880 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/file.js
+881 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/gelf.js
+882 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/hookio.js
+883 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/logLevelFilter.js
+884 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/multiprocess.js
+885 silly gunzTarPerm extractEntry .bob/instrumented/lib/appenders/smtp.js
+886 silly gunzTarPerm extractEntry .bob/instrumented/lib/log4js.json
+887 silly gunzTarPerm extractEntry .bob/instrumented/lib/streams/BaseRollingFileStream.js
+888 silly gunzTarPerm extractEntry .bob/instrumented/lib/streams/DateRollingFileStream.js
+889 silly gunzTarPerm extractEntry .bob/instrumented/lib/streams/index.js
+890 silly gunzTarPerm extractEntry .bob/instrumented/lib/streams/RollingFileStream.js
+891 silly gunzTarPerm extractEntry .bob/instrumented/test/configuration-test.js
+892 silly gunzTarPerm extractEntry .bob/instrumented/test/fileAppender-test.js
+893 silly gunzTarPerm extractEntry .bob/instrumented/test/gelfAppender-test.js
+894 silly gunzTarPerm extractEntry .bob/instrumented/test/global-log-level-test.js
+895 silly gunzTarPerm extractEntry .bob/instrumented/test/debug-test.js
+896 silly gunzTarPerm extractEntry .bob/instrumented/test/layouts-test.js
+897 silly gunzTarPerm extractEntry .bob/instrumented/test/levels-test.js
+898 silly gunzTarPerm extractEntry .bob/instrumented/test/configureNoLevels-test.js
+899 silly gunzTarPerm extractEntry .bob/instrumented/test/setLevel-asymmetry-test.js
+900 silly gunzTarPerm extractEntry .bob/instrumented/test/logger-test.js
+901 silly gunzTarPerm extractEntry .bob/instrumented/test/dateFileAppender-test.js
+902 silly gunzTarPerm extractEntry .bob/instrumented/test/logging-test.js
+903 silly gunzTarPerm extractEntry .bob/instrumented/test/date_format-test.js
+904 silly gunzTarPerm extractEntry .bob/instrumented/test/logLevelFilter-test.js
+905 silly gunzTarPerm extractEntry .bob/instrumented/test/smtpAppender-test.js
+906 silly gunzTarPerm extractEntry .bob/instrumented/test/multiprocess-test.js
+907 silly gunzTarPerm extractEntry .bob/instrumented/test/consoleAppender-test.js
+908 silly gunzTarPerm extractEntry .bob/instrumented/test/nolog-test.js
+909 silly gunzTarPerm extractEntry .bob/instrumented/test/connect-logger-test.js
+910 silly gunzTarPerm extractEntry .bob/instrumented/test/reloadConfiguration-test.js
+911 silly gunzTarPerm extractEntry .bob/instrumented/test/hookioAppender-test.js
+912 silly gunzTarPerm extractEntry .bob/instrumented/test/log-abspath-test.js
+913 silly gunzTarPerm extractEntry .bob/instrumented/test/log4js.json
+914 silly gunzTarPerm extractEntry .bob/instrumented/test/date-file-test
+915 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/BaseRollingFileStream-test.js
+916 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/rollingFileStream-test.js
+917 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/DateRollingFileStream-test.js
+918 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-date-rolling-file-stream-32013-05-04
+919 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-file-stream
+920 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-file-stream-write-less
+921 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-file-stream-write-more
+922 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-file-stream-write-more.1
+923 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.5
+924 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.0
+925 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.1
+926 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.11
+927 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.2
+928 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.20
+929 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.3
+930 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files.4
+931 silly gunzTarPerm extractEntry .bob/instrumented/test/streams/test-rolling-stream-with-existing-files
+932 silly gunzTarPerm extractEntry .bob/instrumented/test/with-dateFile.json
+933 silly gunzTarPerm extractEntry .bob/instrumented/test/with-log-rolling.json
+934 silly gunzTarPerm extractEntry .bob/instrumented/test/with-logLevelFilter.json
+935 silly gunzTarPerm extractEntry .bob/report/coverage.out
+936 silly gunzTarPerm extractEntry .bob/report/lint.out
+937 silly gunzTarPerm extractEntry .travis.yml
+938 silly gunzTarPerm extractEntry examples/example-connect-logger.js
+939 silly gunzTarPerm extractEntry examples/example-socket.js
+940 silly gunzTarPerm extractEntry examples/example.js
+941 silly gunzTarPerm extractEntry examples/fromreadme.js
+942 silly gunzTarPerm extractEntry examples/log-rolling.js
+943 silly gunzTarPerm extractEntry examples/memory-test.js
+944 silly gunzTarPerm extractEntry examples/patternLayout-tokens.js
+945 silly gunzTarPerm extractEntry examples/smtp-appender.js
+946 silly gunzTarPerm extractEntry lib/connect-logger.js
+947 silly gunzTarPerm extractEntry lib/date_format.js
+948 silly gunzTarPerm extractEntry lib/debug.js
+949 silly gunzTarPerm extractEntry lib/layouts.js
+950 silly gunzTarPerm extractEntry lib/levels.js
+951 silly gunzTarPerm extractEntry lib/log4js.js
+952 silly gunzTarPerm extractEntry lib/logger.js
+953 silly gunzTarPerm extractEntry lib/appenders/console.js
+954 silly gunzTarPerm extractEntry lib/appenders/dateFile.js
+955 silly gunzTarPerm extractEntry lib/appenders/file.js
+956 silly gunzTarPerm extractEntry lib/appenders/gelf.js
+957 silly gunzTarPerm extractEntry lib/appenders/hookio.js
+958 silly gunzTarPerm extractEntry lib/appenders/logLevelFilter.js
+959 silly gunzTarPerm extractEntry lib/appenders/multiprocess.js
+960 silly gunzTarPerm extractEntry lib/appenders/smtp.js
+961 silly gunzTarPerm extractEntry lib/log4js.json
+962 silly gunzTarPerm extractEntry lib/streams/BaseRollingFileStream.js
+963 silly gunzTarPerm extractEntry lib/streams/DateRollingFileStream.js
+964 silly gunzTarPerm extractEntry lib/streams/index.js
+965 silly gunzTarPerm extractEntry lib/streams/RollingFileStream.js
+966 silly gunzTarPerm extractEntry .bob.json
+967 silly gunzTarPerm extractEntry .jshintrc
+968 silly gunzTarPerm extractEntry test/configuration-test.js
+969 silly gunzTarPerm extractEntry test/fileAppender-test.js
+970 silly gunzTarPerm extractEntry test/gelfAppender-test.js
+971 silly gunzTarPerm extractEntry test/global-log-level-test.js
+972 silly gunzTarPerm extractEntry test/debug-test.js
+973 silly gunzTarPerm extractEntry test/layouts-test.js
+974 silly gunzTarPerm extractEntry test/levels-test.js
+975 silly gunzTarPerm extractEntry test/configureNoLevels-test.js
+976 silly gunzTarPerm extractEntry test/setLevel-asymmetry-test.js
+977 silly gunzTarPerm extractEntry test/logger-test.js
+978 silly gunzTarPerm extractEntry test/dateFileAppender-test.js
+979 silly gunzTarPerm extractEntry test/logging-test.js
+980 silly gunzTarPerm extractEntry test/date_format-test.js
+981 silly gunzTarPerm extractEntry test/logLevelFilter-test.js
+982 silly gunzTarPerm extractEntry test/smtpAppender-test.js
+983 silly gunzTarPerm extractEntry test/multiprocess-test.js
+984 silly gunzTarPerm extractEntry test/consoleAppender-test.js
+985 silly gunzTarPerm extractEntry test/nolog-test.js
+986 silly gunzTarPerm extractEntry test/connect-logger-test.js
+987 silly gunzTarPerm extractEntry test/reloadConfiguration-test.js
+988 silly gunzTarPerm extractEntry test/hookioAppender-test.js
+989 silly gunzTarPerm extractEntry test/log-abspath-test.js
+990 silly gunzTarPerm extractEntry test/log4js.json
+991 silly gunzTarPerm extractEntry test/date-file-test
+992 silly gunzTarPerm extractEntry test/streams/BaseRollingFileStream-test.js
+993 silly gunzTarPerm extractEntry test/streams/rollingFileStream-test.js
+994 silly gunzTarPerm extractEntry test/streams/DateRollingFileStream-test.js
+995 silly gunzTarPerm extractEntry test/streams/test-date-rolling-file-stream-32013-05-04
+996 silly gunzTarPerm extractEntry test/streams/test-rolling-file-stream
+997 silly gunzTarPerm extractEntry test/streams/test-rolling-file-stream-write-less
+998 silly gunzTarPerm extractEntry test/streams/test-rolling-file-stream-write-more
+999 silly gunzTarPerm extractEntry test/streams/test-rolling-file-stream-write-more.1
+1000 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.5
+1001 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.0
+1002 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.1
+1003 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.11
+1004 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.2
+1005 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.20
+1006 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.3
+1007 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files.4
+1008 silly gunzTarPerm extractEntry test/streams/test-rolling-stream-with-existing-files
+1009 silly gunzTarPerm extractEntry test/with-dateFile.json
+1010 silly gunzTarPerm extractEntry test/with-log-rolling.json
+1011 silly gunzTarPerm extractEntry test/with-logLevelFilter.json
+1012 silly gunzTarPerm extractEntry test0
+1013 silly gunzTarPerm extractEntry test1
+1014 silly gunzTarPerm extractEntry test2
+1015 silly gunzTarPerm extractEntry test3
+1016 silly gunzTarPerm extractEntry test4
+1017 verbose read json /Users/mxm/.npm/log4js/0.6.7/package/package.json
+1018 silly lockFile c96f934a-ers-mxm-npm-log4js-0-6-7-package /Users/mxm/.npm/log4js/0.6.7/package
+1019 silly shasum updated bytes 40960
+1020 silly shasum updated bytes 40960
+1021 silly shasum updated bytes 40213
+1022 info shasum 41a9d61d8be56917103945d2d291e128fbcf2fb4
+1022 info shasum /Users/mxm/.npm/log4js/0.6.7/package.tgz
+1023 verbose from cache /Users/mxm/.npm/log4js/0.6.7/package/package.json
+1024 verbose chmod /Users/mxm/.npm/log4js/0.6.7/package.tgz 644
+1025 verbose chown /Users/mxm/.npm/log4js/0.6.7/package.tgz [ 501, 80 ]
+1026 silly lockFile a79616ed-pmjs-org-log4js-log4js-0-6-7-tgz https://registry.npmjs.org/log4js/-/log4js-0.6.7.tgz
+1027 silly lockFile c927a66f-log4js-0-6-7 log4js@0.6.7
+1028 silly lockFile f3becdd9-log4js-0-6-3 log4js@~0.6.3
+1029 http 200 https://registry.npmjs.org/growly/-/growly-1.1.1.tgz
+1030 silly shasum updated bytes 33304
+1031 info shasum eb434a0e56f0241d82864cbfd4112c70911242fa
+1031 info shasum /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/tmp.tgz
+1032 verbose tar unpack /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/tmp.tgz
+1033 silly lockFile 158a9abf-1662-0-26075567537918687-package /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/package
+1034 verbose lock /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/package /Users/mxm/.npm/158a9abf-1662-0-26075567537918687-package.lock
+1035 silly gunzTarPerm modes [ '755', '644' ]
+1036 silly gunzTarPerm extractEntry package.json
+1037 silly gunzTarPerm extractEntry README.md
+1038 silly gunzTarPerm extractEntry example/bakery.js
+1039 silly gunzTarPerm extractEntry example/simple.js
+1040 silly gunzTarPerm extractEntry example/cake.png
+1041 silly gunzTarPerm extractEntry example/muffin.png
+1042 silly gunzTarPerm extractEntry HISTORY.md
+1043 silly gunzTarPerm extractEntry lib/gntp.js
+1044 silly gunzTarPerm extractEntry lib/growly.js
+1045 verbose read json /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/package/package.json
+1046 silly lockFile 158a9abf-1662-0-26075567537918687-package /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/package
+1047 verbose from cache /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/package/package.json
+1048 verbose tar pack [ '/Users/mxm/.npm/growly/1.1.1/package.tgz',
+1048 verbose tar pack   '/var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/package' ]
+1049 verbose tarball /Users/mxm/.npm/growly/1.1.1/package.tgz
+1050 verbose folder /var/folders/pf/pf+yMlxB2Pazv++BYqVVfU+++TI/-Tmp-/npm-17601/1375628631662-0.26075567537918687/package
+1051 silly lockFile d0f60b26-mxm-npm-growly-1-1-1-package-tgz /Users/mxm/.npm/growly/1.1.1/package.tgz
+1052 verbose lock /Users/mxm/.npm/growly/1.1.1/package.tgz /Users/mxm/.npm/d0f60b26-mxm-npm-growly-1-1-1-package-tgz.lock
+1053 silly lockFile d0f60b26-mxm-npm-growly-1-1-1-package-tgz /Users/mxm/.npm/growly/1.1.1/package.tgz
+1054 silly lockFile 3447c0d9-ers-mxm-npm-growly-1-1-1-package /Users/mxm/.npm/growly/1.1.1/package
+1055 verbose lock /Users/mxm/.npm/growly/1.1.1/package /Users/mxm/.npm/3447c0d9-ers-mxm-npm-growly-1-1-1-package.lock
+1056 silly lockFile 3447c0d9-ers-mxm-npm-growly-1-1-1-package /Users/mxm/.npm/growly/1.1.1/package
+1057 verbose tar unpack /Users/mxm/.npm/growly/1.1.1/package.tgz
+1058 silly lockFile 3447c0d9-ers-mxm-npm-growly-1-1-1-package /Users/mxm/.npm/growly/1.1.1/package
+1059 verbose lock /Users/mxm/.npm/growly/1.1.1/package /Users/mxm/.npm/3447c0d9-ers-mxm-npm-growly-1-1-1-package.lock
+1060 silly gunzTarPerm modes [ '755', '644' ]
+1061 silly gunzTarPerm extractEntry package.json
+1062 silly gunzTarPerm extractEntry README.md
+1063 silly gunzTarPerm extractEntry example/bakery.js
+1064 silly gunzTarPerm extractEntry example/simple.js
+1065 silly gunzTarPerm extractEntry example/cake.png
+1066 silly gunzTarPerm extractEntry example/muffin.png
+1067 silly gunzTarPerm extractEntry HISTORY.md
+1068 silly gunzTarPerm extractEntry lib/gntp.js
+1069 silly gunzTarPerm extractEntry lib/growly.js
+1070 verbose read json /Users/mxm/.npm/growly/1.1.1/package/package.json
+1071 silly lockFile 3447c0d9-ers-mxm-npm-growly-1-1-1-package /Users/mxm/.npm/growly/1.1.1/package
+1072 silly shasum updated bytes 33304
+1073 info shasum eb434a0e56f0241d82864cbfd4112c70911242fa
+1073 info shasum /Users/mxm/.npm/growly/1.1.1/package.tgz
+1074 verbose from cache /Users/mxm/.npm/growly/1.1.1/package/package.json
+1075 verbose chmod /Users/mxm/.npm/growly/1.1.1/package.tgz 644
+1076 verbose chown /Users/mxm/.npm/growly/1.1.1/package.tgz [ 501, 80 ]
+1077 silly lockFile ffb4ffba-pmjs-org-growly-growly-1-1-1-tgz https://registry.npmjs.org/growly/-/growly-1.1.1.tgz
+1078 silly lockFile 4d238e67-growly-1-1-1 growly@1.1.1
+1079 silly lockFile 2a8508a4-growly-1-1 growly@~1.1
+1080 info trying registry request attempt 3 at 17:05:35
+1081 verbose etag "A256MV3735VB0OHB0WUAUPCB9"
+1082 http GET https://registry.npmjs.org/colors/0.6.0-1
+1083 info trying registry request attempt 3 at 17:05:35
+1084 verbose etag "77K6CD0WX0R29DUFSM2PGZ5HN"
+1085 http GET https://registry.npmjs.org/socket.io
+1086 info trying registry request attempt 3 at 17:05:35
+1087 verbose etag "50X3LWQDSY1SAULXQ7QRKW4PE"
+1088 http GET https://registry.npmjs.org/rimraf
+1089 info trying registry request attempt 3 at 17:05:35
+1090 verbose etag "53MGS4758SFBP4J0VMOWHAVRB"
+1091 http GET https://registry.npmjs.org/dateformat/1.0.2-1.2.3
+1092 silly registry.get cb [ 304, undefined ]
+1093 verbose etag rimraf from cache
+1094 silly registry.get cb [ 304, undefined ]
+1095 verbose etag dateformat/1.0.2-1.2.3 from cache
+1096 silly addNameRange number 2 { name: 'rimraf', range: '>=2.1.0- <2.2.0-', hasData: true }
+1097 silly addNameRange versions [ 'rimraf',
+1097 silly addNameRange   [ '1.0.0',
+1097 silly addNameRange     '1.0.1',
+1097 silly addNameRange     '1.0.2',
+1097 silly addNameRange     '1.0.4',
+1097 silly addNameRange     '1.0.5',
+1097 silly addNameRange     '1.0.6',
+1097 silly addNameRange     '1.0.7',
+1097 silly addNameRange     '1.0.8',
+1097 silly addNameRange     '1.0.9',
+1097 silly addNameRange     '2.0.0',
+1097 silly addNameRange     '2.0.1',
+1097 silly addNameRange     '2.0.2',
+1097 silly addNameRange     '2.0.3',
+1097 silly addNameRange     '2.1.0',
+1097 silly addNameRange     '2.1.1',
+1097 silly addNameRange     '2.1.2',
+1097 silly addNameRange     '2.1.3',
+1097 silly addNameRange     '2.1.4',
+1097 silly addNameRange     '2.2.0',
+1097 silly addNameRange     '2.2.1',
+1097 silly addNameRange     '2.2.2' ] ]
+1098 verbose addNamed [ 'rimraf', '2.1.4' ]
+1099 verbose addNamed [ '2.1.4', '2.1.4' ]
+1100 silly lockFile faaa5c02-rimraf-2-1-4 rimraf@2.1.4
+1101 verbose lock rimraf@2.1.4 /Users/mxm/.npm/faaa5c02-rimraf-2-1-4.lock
+1102 verbose read json /Users/mxm/.npm/dateformat/1.0.2-1.2.3/package/package.json
+1103 silly registry.get cb [ 304, undefined ]
+1104 verbose etag colors/0.6.0-1 from cache
+1105 silly registry.get cb [ 304, undefined ]
+1106 verbose etag socket.io from cache
+1107 silly lockFile 644d6e27-dateformat-1-0-2-1-2-3 dateformat@1.0.2-1.2.3
+1108 verbose read json /Users/mxm/.npm/rimraf/2.1.4/package/package.json
+1109 verbose read json /Users/mxm/.npm/colors/0.6.0-1/package/package.json
+1110 silly addNameRange number 2 { name: 'socket.io', range: '>=0.9.13- <0.10.0-', hasData: true }
+1111 silly addNameRange versions [ 'socket.io',
+1111 silly addNameRange   [ '0.3.8',
+1111 silly addNameRange     '0.4.0',
+1111 silly addNameRange     '0.4.1',
+1111 silly addNameRange     '0.5.1',
+1111 silly addNameRange     '0.5.3',
+1111 silly addNameRange     '0.6.0',
+1111 silly addNameRange     '0.6.1',
+1111 silly addNameRange     '0.6.3',
+1111 silly addNameRange     '0.6.4',
+1111 silly addNameRange     '0.6.5',
+1111 silly addNameRange     '0.6.6',
+1111 silly addNameRange     '0.6.7',
+1111 silly addNameRange     '0.6.8',
+1111 silly addNameRange     '0.6.9',
+1111 silly addNameRange     '0.6.10',
+1111 silly addNameRange     '0.6.11',
+1111 silly addNameRange     '0.6.12',
+1111 silly addNameRange     '0.6.14',
+1111 silly addNameRange     '0.6.15',
+1111 silly addNameRange     '0.6.16',
+1111 silly addNameRange     '0.6.17',
+1111 silly addNameRange     '0.6.18',
+1111 silly addNameRange     '0.7.0',
+1111 silly addNameRange     '0.7.1',
+1111 silly addNameRange     '0.7.2',
+1111 silly addNameRange     '0.7.3',
+1111 silly addNameRange     '0.7.4',
+1111 silly addNameRange     '0.7.5',
+1111 silly addNameRange     '0.7.6',
+1111 silly addNameRange     '0.7.7',
+1111 silly addNameRange     '0.7.8',
+1111 silly addNameRange     '0.7.9',
+1111 silly addNameRange     '0.7.10',
+1111 silly addNameRange     '0.7.11',
+1111 silly addNameRange     '0.8.0',
+1111 silly addNameRange     '0.8.1',
+1111 silly addNameRange     '0.8.2',
+1111 silly addNameRange     '0.8.3',
+1111 silly addNameRange     '0.8.4',
+1111 silly addNameRange     '0.8.5',
+1111 silly addNameRange     '0.8.6',
+1111 silly addNameRange     '0.8.7',
+1111 silly addNameRange     '0.9.0',
+1111 silly addNameRange     '0.9.1',
+1111 silly addNameRange     '0.9.1-1',
+1111 silly addNameRange     '0.9.2',
+1111 silly addNameRange     '0.9.3',
+1111 silly addNameRange     '0.9.4',
+1111 silly addNameRange     '0.9.5' ] ]
+1112 silly lockFile 729f5b40-socket-io-0-9-13 socket.io@~0.9.13
+1113 verbose about to build /usr/local/share/npm/lib/node_modules/karma
+1114 info /usr/local/share/npm/lib/node_modules/karma unbuild
+1115 verbose from cache /usr/local/share/npm/lib/node_modules/karma/package.json
+1116 info preuninstall karma@0.8.8
+1117 info uninstall karma@0.8.8
+1118 verbose true,/usr/local/share/npm/lib/node_modules,/usr/local/share/npm/lib/node_modules unbuild karma@0.8.8
+1119 verbose /usr/local/share/npm/bin,[object Object] binRoot
+1120 info postuninstall karma@0.8.8
+1121 silly lockFile 02eba27f-colors-0-6-0-1 colors@0.6.0-1
+1122 silly lockFile faaa5c02-rimraf-2-1-4 rimraf@2.1.4
+1123 silly lockFile 37a759a6-rimraf-2-1 rimraf@~2.1
+1124 error Error: No compatible version found: socket.io@'>=0.9.13- <0.10.0-'
+1124 error Valid install targets:
+1124 error ["0.3.8","0.4.0","0.4.1","0.5.1","0.5.3","0.6.0","0.6.1","0.6.3","0.6.4","0.6.5","0.6.6","0.6.7","0.6.8","0.6.9","0.6.10","0.6.11","0.6.12","0.6.14","0.6.15","0.6.16","0.6.17","0.6.18","0.7.0","0.7.1","0.7.2","0.7.3","0.7.4","0.7.5","0.7.6","0.7.7","0.7.8","0.7.9","0.7.10","0.7.11","0.8.0","0.8.1","0.8.2","0.8.3","0.8.4","0.8.5","0.8.6","0.8.7","0.9.0","0.9.1","0.9.1-1","0.9.2","0.9.3","0.9.4","0.9.5"]
+1124 error     at installTargetsError (/usr/local/Cellar/node/0.8.12/lib/node_modules/npm/lib/cache.js:553:10)
+1124 error     at next (/usr/local/Cellar/node/0.8.12/lib/node_modules/npm/lib/cache.js:532:17)
+1124 error     at /usr/local/Cellar/node/0.8.12/lib/node_modules/npm/lib/cache.js:512:5
+1124 error     at saved (/usr/local/Cellar/node/0.8.12/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:138:7)
+1124 error     at /usr/local/Cellar/node/0.8.12/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:218:7
+1124 error     at Object.oncomplete (fs.js:297:15)
+1125 error If you need help, you may report this log at:
+1125 error     <http://github.com/isaacs/npm/issues>
+1125 error or email it to:
+1125 error     <npm-@googlegroups.com>
+1126 error System Darwin 10.8.0
+1127 error command "/usr/local/Cellar/node/0.8.12/bin/node" "/usr/local/bin/npm" "install" "-g" "karma"
+1128 error cwd /Users/mxm/WorkingArea/52diet
+1129 error node -v v0.8.12
+1130 error npm -v 1.1.63
+1131 verbose exit [ 1, true ]

@@ -2,48 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a7c967-7aba-4cba-86fa-30707fe8a50e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/build/two.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/build/two.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/component.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/group.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/matrix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/polygon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/renderer/canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/renderer/svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/renderer/webgl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/shape.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/two.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/src/vector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/curve.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/ellipse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/polygon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/rectangle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/images/canvas/styles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/tests/webgl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/canvas2blob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/qunit/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/qunit/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/requestAnimationFrame.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/resemble.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/stats.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/tween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/third-party/underscore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two.js/utils/build.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/component.json" afterPath="$PROJECT_DIR$/js/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="52diet.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="48a7c967-7aba-4cba-86fa-30707fe8a50e" time="1375626947522" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +20,7 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="52diet" />
   </component>
@@ -65,7 +29,7 @@
       <file leaf-file-name="snapshot.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/data/snapshot.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="14233" selection-end="14233" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="14233" selection-end="14233" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -74,7 +38,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="-5.625">
+            <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,16 +47,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="33" selection-start="4087" selection-end="4087" vertical-scroll-proportion="1.7766991">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="component.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/component.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+            <state line="45" column="0" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.6540698">
               <folding />
             </state>
           </provider>
@@ -107,6 +62,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -240,54 +200,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52diet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52diet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52diet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52diet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="moment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="min" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -330,6 +242,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="48a7c967-7aba-4cba-86fa-30707fe8a50e" name="Default" comment="" />
@@ -350,7 +279,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -359,6 +287,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -383,19 +312,24 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -409,6 +343,7 @@
     <option name="ACTIVE_VCS_NAME" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
@@ -416,6 +351,34 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/data/snapshot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="14233" selection-end="14233" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="4088" selection-end="4088" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/component.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/components/dc.js/component.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -446,35 +409,42 @@
         <state line="28" column="0" selection-start="528" selection-end="528" vertical-scroll-proportion="0.407767" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/data/snapshot.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="14233" selection-end="14233" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/components/knockout.js/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/component.json">
+    <entry file="file://$PROJECT_DIR$/js/data/snapshot.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+        <state line="4" column="0" selection-start="14233" selection-end="14233" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="-5.625">
+        <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/component.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.16369048">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/components/moment/min/langs.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="33" selection-start="4087" selection-end="4087" vertical-scroll-proportion="1.7766991">
+        <state line="45" column="0" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.6540698">
           <folding />
         </state>
       </provider>
