@@ -7,26 +7,39 @@
     now = moment();
     aYearAgo = now.subtract('years', 1);
     console.dir(aYearAgo);
+    _.mixin({
+      extractStartOfDay: function(items, datePropertyReader) {
+        var format,
+          _this = this;
+        format = d3.time.format("%Y-%m-%d");
+        return _.map(items, function(item) {
+          var m, startOfDay;
+          m = moment(datePropertyReader(item));
+          startOfDay = m.startOf('day');
+          item['day'] = format(startOfDay.toDate());
+          return item;
+        });
+      }
+    });
     svg = dimple.newSvg("#chartContainer", 620, 600);
     return d3.json("/js/data/weight.json", function(weightData) {
       return d3.json("/js/data/fitnessActivities.json", function(activityData) {
-        var activityItems, mergedItems, myChart, weightItems, x1, x2, y1, y2;
+        var activityItems, myChart, weightItems, x1, x2, y1, y2;
         weightItems = _.chain(weightData.items).filter(function(i) {
           return i.weight > 50;
         }).filter(function(i) {
           return moment(i.timestamp).isAfter(aYearAgo);
+        }).extractStartOfDay(function(item) {
+          return item.timestamp;
         }).value();
+        console.dir(weightItems);
         activityItems = _.chain(activityData.items).filter(function(i) {
           return moment(i.start_time).isAfter(aYearAgo);
+        }).extractStartOfDay(function(item) {
+          return item.start_time;
         }).value();
-        mergedItems = weightItems;
-        _.each(activityItems, function(item, index) {
-          return _.keys(item).forEach(function(key) {
-            return mergedItems[index][key] = item[key];
-          });
-        });
-        console.dir(mergedItems);
-        myChart = new dimple.chart(svg, mergedItems);
+        console.dir(activityItems);
+        myChart = new dimple.chart(svg, weightItems);
         myChart.setBounds(60, 30, 505, 305);
         x1 = myChart.addTimeAxis("x", "timestamp", null, "%Y-%m-%d");
         x1.addOrderRule("Date");
