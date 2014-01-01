@@ -30,13 +30,14 @@
           }).flatten(true).object().value();
         }).value();
       },
-      fillInGaps: function(items, propertyName, defaultValue) {
-        var fromClosest, itemsWithPropertyOrderedByDay,
+      fillInGaps: function(items, propertyName) {
+        var day, entriesWithPropertyOrderedByDayDesc, filledIn, findClosest, itemsOrderedByDayDesc, minDay,
           _this = this;
-        itemsWithPropertyOrderedByDay = _.chain(items).filter(function(item) {
-          return item[propertyName];
-        }).sortBy(function(item) {
+        itemsOrderedByDayDesc = _.chain(items).sortBy(function(item) {
           return moment(item.day).unix();
+        }).reverse().value();
+        entriesWithPropertyOrderedByDayDesc = _.chain(itemsOrderedByDayDesc).filter(function(item) {
+          return item[propertyName];
         }).map(function(item) {
           var entry;
           entry = {
@@ -46,24 +47,33 @@
           return entry;
         }).value();
         console.log("Sorted:");
-        console.dir(itemsWithPropertyOrderedByDay);
-        fromClosest = function(day) {
-          var found;
-          found = _.find(itemsWithPropertyOrderedByDay, function(item) {
-            return moment(item.day).isBefore(moment(day));
+        console.dir(entriesWithPropertyOrderedByDayDesc);
+        findClosest = function(day) {
+          var entry, found;
+          found = _.find(entriesWithPropertyOrderedByDayDesc, function(item) {
+            return moment(item.day).unix() <= day.unix();
           });
-          if (found != null) {
-            return found[propertyName];
+          if (day.unix() === moment(found.day).unix()) {
+            return found;
           } else {
-            return defaultValue;
+            entry = {
+              day: d3.time.format("%Y-%m-%d")(day.toDate())
+            };
+            entry[propertyName] = found[propertyName];
+            return entry;
           }
         };
-        return _.map(items, function(item) {
-          if (item[propertyName] == null) {
-            item[propertyName] = fromClosest(item.day);
-          }
-          return item;
-        });
+        minDay = moment(_.last(itemsOrderedByDayDesc).day);
+        day = moment(_.min(itemsOrderedByDayDesc).day);
+        console.log("" + (day.format("dddd, MMMM Do YYYY, h:mm:ss a")) + " -- " + (minDay.format("dddd, MMMM Do YYYY, h:mm:ss a")));
+        filledIn = [];
+        while (day.isAfter(minDay)) {
+          filledIn.push(findClosest(day));
+          day.subtract(1, 'day');
+        }
+        console.log("Filled in:");
+        console.dir(filledIn);
+        return filledIn;
       }
     });
     svg = dimple.newSvg("#chartContainer", 620, 600);
@@ -89,6 +99,7 @@
         x = myChart.addTimeAxis("x", "day", "%Y-%m-%d", "%Y-%m-%d");
         x.addOrderRule("Date");
         y1 = myChart.addMeasureAxis("y", "weight");
+        y1.overrideMin = 80;
         myChart.addSeries(null, dimple.plot.line, [x, y1]);
         y2 = myChart.addMeasureAxis("y", "total_calories");
         myChart.addSeries(null, dimple.plot.bar, [x, y2]);

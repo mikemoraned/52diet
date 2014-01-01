@@ -27,11 +27,15 @@ $(() ->
       ).
       value()
 
-    fillInGaps: (items, propertyName, defaultValue) ->
+    fillInGaps: (items, propertyName) ->
 
-      itemsWithPropertyOrderedByDay = _.chain(items).
-        filter((item) => item[propertyName]).
+      itemsOrderedByDayDesc = _.chain(items).
         sortBy((item) => moment(item.day).unix()).
+        reverse().
+        value()
+
+      entriesWithPropertyOrderedByDayDesc = _.chain(itemsOrderedByDayDesc).
+        filter((item) => item[propertyName]).
         map((item) =>
           entry = { day: item.day }
           entry[propertyName] = item[propertyName]
@@ -40,22 +44,32 @@ $(() ->
         value()
 
       console.log("Sorted:")
-      console.dir(itemsWithPropertyOrderedByDay)
+      console.dir(entriesWithPropertyOrderedByDayDesc)
 
-      fromClosest = (day) =>
-        found = _.find(itemsWithPropertyOrderedByDay, (item) => moment(item.day).isBefore(moment(day)))
-        if found?
-          found[propertyName]
+      findClosest = (day) =>
+        found = _.find(entriesWithPropertyOrderedByDayDesc,
+          (item) => moment(item.day).unix() <= day.unix())
+        if day.unix() == moment(found.day).unix()
+          found
         else
-          defaultValue
+          entry = { day: d3.time.format("%Y-%m-%d")(day.toDate()) }
+          entry[propertyName] = found[propertyName]
+          entry
 
-      
+      minDay = moment(_.last(itemsOrderedByDayDesc).day)
+      day = moment(_.min(itemsOrderedByDayDesc).day)
 
-      _.map(items, (item) =>
-        if not item[propertyName]?
-          item[propertyName] = fromClosest(item.day)
-        item
-      )
+      console.log("#{day.format("dddd, MMMM Do YYYY, h:mm:ss a")} -- #{minDay.format("dddd, MMMM Do YYYY, h:mm:ss a")}")
+
+      filledIn = []
+      while (day.isAfter(minDay))
+        filledIn.push(findClosest(day))
+        day.subtract(1, 'day')
+
+      console.log("Filled in:")
+      console.dir(filledIn)
+
+      filledIn
   )
 
   svg = dimple.newSvg("#chartContainer", 620, 600)
@@ -111,7 +125,7 @@ $(() ->
       x.addOrderRule("Date")
 
       y1 = myChart.addMeasureAxis("y", "weight")
-#      y1.overrideMin = 80
+      y1.overrideMin = 80
       myChart.addSeries(null, dimple.plot.line, [x, y1])
 
       y2 = myChart.addMeasureAxis("y", "total_calories")
