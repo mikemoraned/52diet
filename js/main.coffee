@@ -73,8 +73,8 @@ $(() ->
   )
 
   svg = dimple.newSvg("#chartContainer", 1200, 600)
-  d3.json("/js/data/weight.json", (weightData) =>
-    d3.json("/js/data/fitnessActivities.json", (activityData) =>
+  d3.json("js/data/weight.json", (weightData) =>
+    d3.json("js/data/fitnessActivities.json", (activityData) =>
 
       weightItems = _.chain(weightData.items).
         extractStartOfDay((item) => item.timestamp).
