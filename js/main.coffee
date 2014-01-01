@@ -41,7 +41,7 @@ $(() ->
       myChart.addSeries(null, dimple.plot.line, [x1, y1])
 
       y2 = myChart.addMeasureAxis("y", "total_calories")
-      myChart.addSeries(null, dimple.plot.line, [x2, y2])
+      myChart.addSeries(null, dimple.plot.bar, [x2, y2])
 
       myChart.draw()
     )
