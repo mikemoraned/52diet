@@ -33,20 +33,21 @@ $(() ->
 
       weightItems = _.chain(weightData.items).
         filter((i) => i.weight > 50).
-        filter((i) => moment(i.timestamp).isAfter(aYearAgo)).
         extractStartOfDay((item) => item.timestamp).
         value()
 
       console.dir(weightItems)
 
       activityItems = _.chain(activityData.items).
-        filter((i) => moment(i.start_time).isAfter(aYearAgo)).
         extractStartOfDay((item) => item.start_time).
         value()
 
       console.dir(activityItems)
 
-      items = _.joinOnDay([weightItems, activityItems])
+      items = _.chain([weightItems, activityItems]).
+        joinOnDay().
+        filter((i) => moment(i.day).isAfter(aYearAgo)).
+        value()
 
       console.dir(items)
 

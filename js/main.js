@@ -37,19 +37,17 @@
         var activityItems, items, myChart, weightItems, x, y1, y2;
         weightItems = _.chain(weightData.items).filter(function(i) {
           return i.weight > 50;
-        }).filter(function(i) {
-          return moment(i.timestamp).isAfter(aYearAgo);
         }).extractStartOfDay(function(item) {
           return item.timestamp;
         }).value();
         console.dir(weightItems);
-        activityItems = _.chain(activityData.items).filter(function(i) {
-          return moment(i.start_time).isAfter(aYearAgo);
-        }).extractStartOfDay(function(item) {
+        activityItems = _.chain(activityData.items).extractStartOfDay(function(item) {
           return item.start_time;
         }).value();
         console.dir(activityItems);
-        items = _.joinOnDay([weightItems, activityItems]);
+        items = _.chain([weightItems, activityItems]).joinOnDay().filter(function(i) {
+          return moment(i.day).isAfter(aYearAgo);
+        }).value();
         console.dir(items);
         myChart = new dimple.chart(svg, items);
         myChart.setBounds(60, 30, 505, 305);

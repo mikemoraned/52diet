@@ -49,7 +49,7 @@
       <file leaf-file-name="main.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="25" selection-start="1383" selection-end="1392" vertical-scroll-proportion="0.3877551" vertical-offset="378" max-vertical-offset="1425">
+            <state line="48" column="52" selection-start="1360" selection-end="1368" vertical-scroll-proportion="0.4217687" vertical-offset="348" max-vertical-offset="1440">
               <folding />
             </state>
           </provider>
@@ -535,7 +535,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="25" selection-start="1383" selection-end="1392" vertical-scroll-proportion="0.3877551" vertical-offset="378" max-vertical-offset="1425">
+        <state line="48" column="52" selection-start="1360" selection-end="1368" vertical-scroll-proportion="0.4217687" vertical-offset="348" max-vertical-offset="1440">
           <folding />
         </state>
       </provider>
