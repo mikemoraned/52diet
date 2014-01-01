@@ -19,12 +19,22 @@
           item['day'] = format(startOfDay.toDate());
           return item;
         });
+      },
+      joinOnDay: function(itemsArrays) {
+        var combined,
+          _this = this;
+        combined = _.flatten(itemsArrays, true);
+        return _.chain(combined).groupBy('day').map(function(itemsForDay) {
+          return _.chain(itemsForDay).map(function(item) {
+            return _.pairs(item);
+          }).flatten(true).object().value();
+        }).value();
       }
     });
     svg = dimple.newSvg("#chartContainer", 620, 600);
     return d3.json("/js/data/weight.json", function(weightData) {
       return d3.json("/js/data/fitnessActivities.json", function(activityData) {
-        var activityItems, myChart, weightItems, x1, x2, y1, y2;
+        var activityItems, items, myChart, weightItems, x, y1, y2;
         weightItems = _.chain(weightData.items).filter(function(i) {
           return i.weight > 50;
         }).filter(function(i) {
@@ -39,17 +49,17 @@
           return item.start_time;
         }).value();
         console.dir(activityItems);
-        myChart = new dimple.chart(svg, weightItems);
+        items = _.joinOnDay([weightItems, activityItems]);
+        console.dir(items);
+        myChart = new dimple.chart(svg, items);
         myChart.setBounds(60, 30, 505, 305);
-        x1 = myChart.addTimeAxis("x", "timestamp", null, "%Y-%m-%d");
-        x1.addOrderRule("Date");
-        x2 = myChart.addTimeAxis("x", "start_time", null, "%Y-%m-%d");
-        x2.addOrderRule("Date");
+        x = myChart.addTimeAxis("x", "day", "%Y-%m-%d", "%Y-%m-%d");
+        x.addOrderRule("Date");
         y1 = myChart.addMeasureAxis("y", "weight");
         y1.overrideMin = 80;
-        myChart.addSeries(null, dimple.plot.line, [x1, y1]);
+        myChart.addSeries(null, dimple.plot.line, [x, y1]);
         y2 = myChart.addMeasureAxis("y", "total_calories");
-        myChart.addSeries(null, dimple.plot.bar, [x2, y2]);
+        myChart.addSeries(null, dimple.plot.bar, [x, y2]);
         return myChart.draw();
       });
     });

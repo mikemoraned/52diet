@@ -14,6 +14,17 @@ $(() ->
         item['day'] = format(startOfDay.toDate())
         item
       )
+    joinOnDay: (itemsArrays) ->
+      combined = _.flatten(itemsArrays, true)
+      _.chain(combined).groupBy('day').map((itemsForDay) =>
+        _.chain(itemsForDay).
+        map((item) => _.pairs(item)).
+        flatten(true).
+#        tap((i) => console.dir(i)).
+        object().
+        value()
+      ).
+      value()
   )
 
   svg = dimple.newSvg("#chartContainer", 620, 600)
@@ -34,6 +45,10 @@ $(() ->
         value()
 
       console.dir(activityItems)
+
+      items = _.joinOnDay([weightItems, activityItems])
+
+      console.dir(items)
 
 #      caloriesPerDay = _.chain(activityItems).
 #        groupBy((item) => moment(item.start_time).startOf('day')).
@@ -56,21 +71,18 @@ $(() ->
 #
 #      console.dir(mergedItems)
 
-      myChart = new dimple.chart(svg, weightItems)
+      myChart = new dimple.chart(svg, items)
       myChart.setBounds(60, 30, 505, 305)
 
-      x1 = myChart.addTimeAxis("x", "timestamp", null, "%Y-%m-%d")
-      x1.addOrderRule("Date")
-
-      x2 = myChart.addTimeAxis("x", "start_time", null, "%Y-%m-%d")
-      x2.addOrderRule("Date")
+      x = myChart.addTimeAxis("x", "day", "%Y-%m-%d", "%Y-%m-%d")
+      x.addOrderRule("Date")
 
       y1 = myChart.addMeasureAxis("y", "weight")
       y1.overrideMin = 80
-      myChart.addSeries(null, dimple.plot.line, [x1, y1])
+      myChart.addSeries(null, dimple.plot.line, [x, y1])
 
       y2 = myChart.addMeasureAxis("y", "total_calories")
-      myChart.addSeries(null, dimple.plot.bar, [x2, y2])
+      myChart.addSeries(null, dimple.plot.bar, [x, y2])
 
       myChart.draw()
     )
