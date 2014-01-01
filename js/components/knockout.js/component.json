@@ -1,8 +1,0 @@
-{
-  "name": "knockout.js",
-  "version": "2.3.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/bowerjs/knockout.git"
-  }
-}

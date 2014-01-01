@@ -1,7 +1,812 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a7c967-7aba-4cba-86fa-30707fe8a50e" name="Default" comment="" />
+    <list default="true" id="48a7c967-7aba-4cba-86fa-30707fe8a50e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/crossfilter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/crossfilter.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/lib/dart/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/lib/dart/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/lib/dart/dual_pivot_quicksort.dart" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/bisect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/crossfilter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/heap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/heapselect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/identity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/insertionsort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/null.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/permute.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/quicksort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/reduce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/version.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/src/zero.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/test/benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/test/bisect-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/test/crossfilter-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/test/heap-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/test/permute-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/test/select-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/test/sort-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/crossfilter/test/version-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/bin/bower" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/bin/component" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/bin/locale" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/bin/start" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/bin/uglify" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/d3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/d3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/index-browserify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/colorbrewer/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/colorbrewer/colorbrewer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/colorbrewer/colorbrewer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/geographiclib/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/jit/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/penner/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/polymaps/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/protovis/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/science/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/science/science.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/science/science.lin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/science/science.lin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/science/science.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/science/science.stats.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/lib/science/science.stats.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/ascending.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/bisect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/descending.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/entries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/extent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/keys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/max.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/mean.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/median.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/merge.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/nest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/permute.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/quantile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/range.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/shuffle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/sum.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/transpose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/values.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/arrays/zip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/behavior/behavior.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/behavior/drag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/behavior/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/behavior/zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/color/color.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/color/hcl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/color/hsl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/color/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/color/lab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/color/rgb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/color/xyz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/compat/date.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/compat/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/compat/style.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/document.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/functor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/identity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/noop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/ns.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/rebind.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/source.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/subclass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/target.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/true.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/core/vendor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/d3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/dsv/csv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/dsv/dsv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/dsv/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/dsv/tsv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/end.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/event/dispatch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/event/drag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/event/event.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/event/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/event/mouse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/event/timer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/event/touches.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/format/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/format/format-locale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/format/format-localized.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/format/format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/format/formatPrefix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/format/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/format/requote.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/format/round.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/albers-usa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/albers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/azimuthal-equal-area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/azimuthal-equidistant.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/azimuthal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/bounds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/cartesian.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/centroid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/circle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/clip-antimeridian.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/clip-circle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/clip-polygon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/clip-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/clip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/compose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/conic-conformal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/conic-equal-area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/conic-equidistant.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/conic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/distance.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/equirectangular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/geo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/gnomonic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/graticule.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/greatArc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/interpolate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/length.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/mercator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/orthographic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/path-area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/path-bounds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/path-buffer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/path-centroid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/path-context.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/path.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/point-in-polygon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/projection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/resample.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/rotation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/spherical.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/stereographic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/stream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geo/transverse-mercator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geom/delaunay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geom/geom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geom/hull.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geom/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geom/polygon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geom/quadtree.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/geom/voronoi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/ease.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/hcl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/hsl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/interpolate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/lab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/number.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/object.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/rgb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/round.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/transform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/interpolate/uninterpolate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/chord.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/cluster.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/force.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/hierarchy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/histogram.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/layout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/partition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/pie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/stack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/tree.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/layout/treemap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/math/adder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/math/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/math/number.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/math/random.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/math/transform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/math/trigonometry.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/bilinear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/category.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/identity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/linear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/log.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/nice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/ordinal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/polylinear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/pow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/quantile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/quantize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/scale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/sqrt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/scale/threshold.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/append.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/attr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/call.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/classed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/datum.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/each.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/empty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/enter-insert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/enter-select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/enter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/insert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/on.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/order.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/property.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/remove.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/selectAll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/selection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/size.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/sort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/style.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/text.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/selection/transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/start.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/arc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/area-radial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/axis.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/brush.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/chord.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/diagonal-radial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/diagonal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/line-radial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/svg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/svg/symbol.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/day.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/format-iso.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/format-locale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/format-localized.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/format-utc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/hour.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/interval.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/minute.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/month.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/scale-utc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/scale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/second.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/time.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/week.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/time/year.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/attr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/delay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/duration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/each.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/ease.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/remove.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/selectAll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/style.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/subtransition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/text.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/transition/tween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/xhr/html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/xhr/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/xhr/json.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/xhr/text.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/xhr/xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/src/xhr/xml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/XMLHttpRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/ascending-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/bisect-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/descending-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/entries-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/extent-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/keys-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/map-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/max-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/mean-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/median-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/merge-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/min-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/nest-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/permute-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/quantile-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/range-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/set-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/sum-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/transpose-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/values-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/arrays/zip-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/assert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/color/hcl-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/color/hsl-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/color/lab-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/color/rgb-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/core/functor-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/core/ns-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/core/rebind-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/core/version-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/data/sample.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/data/sample.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/data/sample.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/data/sample.tsv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/data/sample.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/data/sample.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/data/us-counties.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/dsv/csv-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/dsv/tsv-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/event/dispatch-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/event/mouse-test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/event/timer-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/event/touch-test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/format/format-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/format/formatPrefix-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/format/requote-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/format/round-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/albers-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/albers-usa-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/area-benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/area-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/azimuthal-equal-area-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/azimuthal-equidistant-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/bounds-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/centroid-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/circle-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/clip-view-mock.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/clip-view-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/conic-conformal-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/conic-equal-area-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/conic-equidistant-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/distance-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/equirectangular-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/gnomonic-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/graticule-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/greatArc-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/interpolate-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/length-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/mercator-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/orthographic-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/path-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/point-in-polygon-mock.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/point-in-polygon-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/projection-test-suite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/projection-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/rotation-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/stereographic-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/stream-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geo/transverse-mercator-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geom/hull-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geom/polygon-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geom/quadtree-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/geom/voronoi-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/array-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/ease-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/hcl-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/hsl-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/interpolate-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/interpolate-transform-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/lab-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/number-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/object-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/rgb-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/round-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/interpolate/string-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/layout/chord-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/layout/cluster-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/layout/force-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/layout/hierarchy-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/layout/histogram-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/layout/pack-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/layout/partition-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/layout/pie-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/layout/tree-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/layout/treemap-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/load.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/math/random-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/math/transform-null-matrix-test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/math/transform-null-test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/math/transform-rotate-origin-test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/math/transform-rotate-test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/math/transform-test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/scale/category-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/scale/identity-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/scale/linear-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/scale/log-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/scale/ordinal-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/scale/pow-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/scale/quantile-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/scale/quantize-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/scale/sqrt-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/scale/threshold-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/append-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/attr-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/call-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/classed-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/data-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/datum-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/each-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/empty-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/enter-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/filter-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/html-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/insert-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/node-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/on-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/order-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/property-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/remove-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/select-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/selectAll-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/selection-select-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/selection-selectAll-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/selection-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/size-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/sort-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/style-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/selection/text-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/svg/arc-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/svg/area-radial-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/svg/area-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/svg/axis-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/svg/brush-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/svg/diagonal-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/svg/line-radial-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/svg/line-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/svg/symbol-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/day-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/dayOfYear-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/days-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/format-iso-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/format-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/format-utc-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/hour-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/hours-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/minute-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/minutes-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/month-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/months-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/scale-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/second-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/seconds-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/time.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/week-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/weeks-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/year-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/time/years-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-attr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-attrTween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-call.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-delay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-duration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-each.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-remove.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-selectAll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-size.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-style.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-styleTween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-text.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-time.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test-tween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/transition/transition-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/xhr/html-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/xhr/json-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/xhr/text-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/xhr/xhr-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/d3/test/xhr/xml-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/dc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/dc.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/globals.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/abstract-bubble-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/bar-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/base-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/bubble-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/bubble-overlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/color-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/composite-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/coordinate-grid-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/cumulative.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/data-count.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/data-table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/errors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/geo-choropleth-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/line-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/marginable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/pie-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/row-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/stackable-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/src/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/bar-chart-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/base-chart-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/bubble-chart-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/bubble-overlay-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/composite-chart-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/coordinate-grid-chart-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/core-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/cumulative-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/data-addition-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/data-count-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/data-table-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/dc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/env-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/env-xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/event-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/example.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/geo-choropleth-chart-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/line-chart-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/pie-chart-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/play-ground.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/row-chart-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/stackable-chart-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/us-counties.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/us-states.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/test/utils-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/dc.js/wiki/api.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/jquery-migrate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/jquery-migrate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/jquery/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/knockout.js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/knockout.js/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/knockout.js/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/knockout.js/knockout-2.3.0.debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/knockout.js/knockout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/cv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/eo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/eu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/gl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/hi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/ms-my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/ne.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/tzm-la.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/tzm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/lang/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/cv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/eo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/eu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/gl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/hi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/ms-my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/ne.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/tzm-la.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/tzm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/lang/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/langs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/langs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/min/moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/moment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/moment/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/build/two.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/build/two.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/group.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/matrix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/polygon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/renderer/canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/renderer/svg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/renderer/webgl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/shape.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/two.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/src/vector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/curve.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/ellipse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/polygon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/rectangle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/images/canvas/styles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/svg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/tests/webgl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/canvas2blob.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/qunit/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/qunit/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/requestAnimationFrame.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/resemble.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/stats.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/tween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/third-party/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/two/utils/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/docco.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/images/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/images/underscore.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/public/fonts/aller-bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/public/fonts/aller-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/public/fonts/aller-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/public/fonts/aller-light.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/public/fonts/aller-light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/public/fonts/aller-light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/public/fonts/novecento-bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/public/fonts/novecento-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/public/fonts/novecento-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/public/stylesheets/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/docs/underscore.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/arrays.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/chaining.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/collections.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/objects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/utility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/vendor/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/vendor/jslitmus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/vendor/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/vendor/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/test/vendor/runner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/underscore-min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/components/underscore/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/main.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bower.json" afterPath="$PROJECT_DIR$/js/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="52diet.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,19 +837,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="660">
+            <state line="15" column="27" selection-start="395" selection-end="395" vertical-scroll-proportion="0.26223776" vertical-offset="0" max-vertical-offset="858">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="2475">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="1" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/bower.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="4" selection-start="137" selection-end="137" vertical-scroll-proportion="-3.75" vertical-offset="30" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -69,8 +892,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/data/snapshot.json" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/component.json" />
+        <option value="$PROJECT_DIR$/js/bower.json" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/main.coffee" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -171,11 +996,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="underscore" />
+              <option name="myItemId" value="jquery" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -193,7 +1018,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dimple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="52diet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="52diet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dimple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="52diet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="52diet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -225,6 +1102,42 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -255,7 +1168,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1676" height="1028" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -303,51 +1216,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/main.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="0" selection-start="4088" selection-end="4088" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/component.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/dc.js/component.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/dc.js/src/row-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/dc.js/src/color-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/dc.js/src/composite-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/dc.js/src/bar-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="0.26213592" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/dc.js/src/base-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="528" selection-end="528" vertical-scroll-proportion="0.407767" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/knockout.js/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/data/snapshot.json">
@@ -357,26 +1230,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="8" column="4" selection-start="137" selection-end="137" vertical-scroll-proportion="-3.75" vertical-offset="30" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/component.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.16369048" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/moment/min/langs.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="2475">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="1" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="395" selection-end="395" vertical-scroll-proportion="0.26223776" vertical-offset="0" max-vertical-offset="858">
           <folding />
         </state>
       </provider>
