@@ -6,7 +6,7 @@
     console.log("Started");
     svg = dimple.newSvg("#chartContainer", 590, 500);
     return d3.json("/js/data/snapshot.json", function(data) {
-      var aYearAgo, items, myChart, now, s, x;
+      var aYearAgo, items, myChart, now, s, x, y;
       now = moment();
       aYearAgo = now.subtract('years', 1);
       console.dir(aYearAgo);
@@ -19,7 +19,8 @@
       myChart.setBounds(60, 30, 505, 305);
       x = myChart.addTimeAxis("x", "timestamp", null, "%Y-%m-%d");
       x.addOrderRule("Date");
-      myChart.addMeasureAxis("y", "weight");
+      y = myChart.addMeasureAxis("y", "weight");
+      y.overrideMin = 80;
       s = myChart.addSeries(null, dimple.plot.line);
       return myChart.draw();
     });

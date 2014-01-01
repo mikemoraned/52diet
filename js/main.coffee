@@ -13,8 +13,9 @@ $(() ->
     myChart.setBounds(60, 30, 505, 305)
     x = myChart.addTimeAxis("x", "timestamp", null, "%Y-%m-%d")
     x.addOrderRule("Date")
-    myChart.addMeasureAxis("y", "weight")
+    y = myChart.addMeasureAxis("y", "weight")
+    y.overrideMin = 80
     s = myChart.addSeries(null, dimple.plot.line)
-    myChart.draw();
+    myChart.draw()
   )
 )

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a7c967-7aba-4cba-86fa-30707fe8a50e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/mxm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bower.json" afterPath="$PROJECT_DIR$/js/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.coffee" afterPath="$PROJECT_DIR$/js/main.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.map" afterPath="$PROJECT_DIR$/js/main.map" />
@@ -52,7 +49,7 @@
       <file leaf-file-name="main.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="24" selection-start="214" selection-end="214" vertical-scroll-proportion="0.11904762" vertical-offset="0" max-vertical-offset="882">
+            <state line="16" column="22" selection-start="577" selection-end="577" vertical-scroll-proportion="0.27210885" vertical-offset="0" max-vertical-offset="882">
               <folding />
             </state>
           </provider>
@@ -503,7 +500,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="24" selection-start="214" selection-end="214" vertical-scroll-proportion="0.11904762" vertical-offset="0" max-vertical-offset="882">
+        <state line="16" column="22" selection-start="577" selection-end="577" vertical-scroll-proportion="0.27210885" vertical-offset="0" max-vertical-offset="882">
           <folding />
         </state>
       </provider>
