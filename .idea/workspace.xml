@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a7c967-7aba-4cba-86fa-30707fe8a50e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.coffee" afterPath="$PROJECT_DIR$/js/main.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.map" afterPath="$PROJECT_DIR$/js/main.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="48a7c967-7aba-4cba-86fa-30707fe8a50e" name="Default" comment="" />
     <ignored path="52diet.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,7 +44,7 @@
       <file leaf-file-name="main.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="35" selection-start="2902" selection-end="2905" vertical-scroll-proportion="0.64285713" vertical-offset="948" max-vertical-offset="1830">
+            <state line="83" column="6" selection-start="2389" selection-end="2389" vertical-scroll-proportion="1.2891157" vertical-offset="108" max-vertical-offset="1860">
               <folding />
             </state>
           </provider>
@@ -535,7 +530,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="35" selection-start="2902" selection-end="2905" vertical-scroll-proportion="0.64285713" vertical-offset="948" max-vertical-offset="1830">
+        <state line="83" column="6" selection-start="2389" selection-end="2389" vertical-scroll-proportion="1.2891157" vertical-offset="108" max-vertical-offset="1860">
           <folding />
         </state>
       </provider>

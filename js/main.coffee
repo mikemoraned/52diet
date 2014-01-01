@@ -72,7 +72,7 @@ $(() ->
       filledIn
   )
 
-  svg = dimple.newSvg("#chartContainer", 620, 600)
+  svg = dimple.newSvg("#chartContainer", 1200, 600)
   d3.json("/js/data/weight.json", (weightData) =>
     d3.json("/js/data/fitnessActivities.json", (activityData) =>
 
@@ -99,7 +99,7 @@ $(() ->
       console.dir(items)
 
       myChart = new dimple.chart(svg, items)
-      myChart.setBounds(60, 30, 505, 305)
+      myChart.setBounds(60, 30, 1000, 305)
 
       x = myChart.addTimeAxis("x", "day", "%Y-%m-%d", "%Y-%m-%d")
       x.addOrderRule("Date")
@@ -108,8 +108,10 @@ $(() ->
       y1.overrideMin = 80
       myChart.addSeries(null, dimple.plot.line, [x, y1])
 
+      colorAxis = myChart.addColorAxis("total_calories")
       y2 = myChart.addMeasureAxis("y", "total_calories")
-      myChart.addSeries(null, dimple.plot.bar, [x, y2])
+      s2 = myChart.addSeries(null, dimple.plot.bar, [x, y2])
+      s2.c = colorAxis
 
       myChart.draw()
     )
