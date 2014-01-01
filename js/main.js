@@ -77,8 +77,8 @@
       }
     });
     svg = dimple.newSvg("#chartContainer", 1200, 600);
-    return d3.json("/js/data/weight.json", function(weightData) {
-      return d3.json("/js/data/fitnessActivities.json", function(activityData) {
+    return d3.json("js/data/weight.json", function(weightData) {
+      return d3.json("js/data/fitnessActivities.json", function(activityData) {
         var activityItems, colorAxis, items, myChart, s2, weightItems, x, y1, y2;
         weightItems = _.chain(weightData.items).extractStartOfDay(function(item) {
           return item.timestamp;
