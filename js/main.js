@@ -29,6 +29,41 @@
             return _.pairs(item);
           }).flatten(true).object().value();
         }).value();
+      },
+      fillInGaps: function(items, propertyName, defaultValue) {
+        var fromClosest, itemsWithPropertyOrderedByDay,
+          _this = this;
+        itemsWithPropertyOrderedByDay = _.chain(items).filter(function(item) {
+          return item[propertyName];
+        }).sortBy(function(item) {
+          return moment(item.day).unix();
+        }).map(function(item) {
+          var entry;
+          entry = {
+            day: item.day
+          };
+          entry[propertyName] = item[propertyName];
+          return entry;
+        }).value();
+        console.log("Sorted:");
+        console.dir(itemsWithPropertyOrderedByDay);
+        fromClosest = function(day) {
+          var found;
+          found = _.find(itemsWithPropertyOrderedByDay, function(item) {
+            return moment(item.day).isBefore(moment(day));
+          });
+          if (found != null) {
+            return found[propertyName];
+          } else {
+            return defaultValue;
+          }
+        };
+        return _.map(items, function(item) {
+          if (item[propertyName] == null) {
+            item[propertyName] = fromClosest(item.day);
+          }
+          return item;
+        });
       }
     });
     svg = dimple.newSvg("#chartContainer", 620, 600);
@@ -39,7 +74,7 @@
           return i.weight > 50;
         }).extractStartOfDay(function(item) {
           return item.timestamp;
-        }).value();
+        }).fillInGaps('weight', 90).value();
         console.dir(weightItems);
         activityItems = _.chain(activityData.items).extractStartOfDay(function(item) {
           return item.start_time;
@@ -54,7 +89,6 @@
         x = myChart.addTimeAxis("x", "day", "%Y-%m-%d", "%Y-%m-%d");
         x.addOrderRule("Date");
         y1 = myChart.addMeasureAxis("y", "weight");
-        y1.overrideMin = 80;
         myChart.addSeries(null, dimple.plot.line, [x, y1]);
         y2 = myChart.addMeasureAxis("y", "total_calories");
         myChart.addSeries(null, dimple.plot.bar, [x, y2]);

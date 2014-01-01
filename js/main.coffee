@@ -14,6 +14,7 @@ $(() ->
         item['day'] = format(startOfDay.toDate())
         item
       )
+
     joinOnDay: (itemsArrays) ->
       combined = _.flatten(itemsArrays, true)
       _.chain(combined).groupBy('day').map((itemsForDay) =>
@@ -25,6 +26,36 @@ $(() ->
         value()
       ).
       value()
+
+    fillInGaps: (items, propertyName, defaultValue) ->
+
+      itemsWithPropertyOrderedByDay = _.chain(items).
+        filter((item) => item[propertyName]).
+        sortBy((item) => moment(item.day).unix()).
+        map((item) =>
+          entry = { day: item.day }
+          entry[propertyName] = item[propertyName]
+          entry
+        ).
+        value()
+
+      console.log("Sorted:")
+      console.dir(itemsWithPropertyOrderedByDay)
+
+      fromClosest = (day) =>
+        found = _.find(itemsWithPropertyOrderedByDay, (item) => moment(item.day).isBefore(moment(day)))
+        if found?
+          found[propertyName]
+        else
+          defaultValue
+
+      
+
+      _.map(items, (item) =>
+        if not item[propertyName]?
+          item[propertyName] = fromClosest(item.day)
+        item
+      )
   )
 
   svg = dimple.newSvg("#chartContainer", 620, 600)
@@ -34,6 +65,7 @@ $(() ->
       weightItems = _.chain(weightData.items).
         filter((i) => i.weight > 50).
         extractStartOfDay((item) => item.timestamp).
+        fillInGaps('weight', 90).
         value()
 
       console.dir(weightItems)
@@ -79,7 +111,7 @@ $(() ->
       x.addOrderRule("Date")
 
       y1 = myChart.addMeasureAxis("y", "weight")
-      y1.overrideMin = 80
+#      y1.overrideMin = 80
       myChart.addSeries(null, dimple.plot.line, [x, y1])
 
       y2 = myChart.addMeasureAxis("y", "total_calories")
