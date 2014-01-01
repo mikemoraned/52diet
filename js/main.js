@@ -80,11 +80,9 @@
     return d3.json("/js/data/weight.json", function(weightData) {
       return d3.json("/js/data/fitnessActivities.json", function(activityData) {
         var activityItems, items, myChart, weightItems, x, y1, y2;
-        weightItems = _.chain(weightData.items).filter(function(i) {
-          return i.weight > 50;
-        }).extractStartOfDay(function(item) {
+        weightItems = _.chain(weightData.items).extractStartOfDay(function(item) {
           return item.timestamp;
-        }).fillInGaps('weight', 90).value();
+        }).fillInGaps('weight').value();
         console.dir(weightItems);
         activityItems = _.chain(activityData.items).extractStartOfDay(function(item) {
           return item.start_time;
@@ -92,6 +90,8 @@
         console.dir(activityItems);
         items = _.chain([weightItems, activityItems]).joinOnDay().filter(function(i) {
           return moment(i.day).isAfter(aYearAgo);
+        }).filter(function(i) {
+          return i.weight > 50;
         }).value();
         console.dir(items);
         myChart = new dimple.chart(svg, items);

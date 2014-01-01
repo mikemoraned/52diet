@@ -77,9 +77,8 @@ $(() ->
     d3.json("/js/data/fitnessActivities.json", (activityData) =>
 
       weightItems = _.chain(weightData.items).
-        filter((i) => i.weight > 50).
         extractStartOfDay((item) => item.timestamp).
-        fillInGaps('weight', 90).
+        fillInGaps('weight').
         value()
 
       console.dir(weightItems)
@@ -93,6 +92,7 @@ $(() ->
       items = _.chain([weightItems, activityItems]).
         joinOnDay().
         filter((i) => moment(i.day).isAfter(aYearAgo)).
+        filter((i) => i.weight > 50).
         value()
 
       console.dir(items)

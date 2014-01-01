@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.coffee" afterPath="$PROJECT_DIR$/js/main.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.map" afterPath="$PROJECT_DIR$/js/main.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="52diet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +48,7 @@
       <file leaf-file-name="main.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="8" selection-start="3678" selection-end="3678" vertical-scroll-proportion="0.7823129" vertical-offset="1230" max-vertical-offset="2130">
+            <state line="95" column="13" selection-start="2751" selection-end="2751" vertical-scroll-proportion="0.6292517" vertical-offset="870" max-vertical-offset="2130">
               <folding />
             </state>
           </provider>
@@ -535,7 +534,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="8" selection-start="3678" selection-end="3678" vertical-scroll-proportion="0.7823129" vertical-offset="1230" max-vertical-offset="2130">
+        <state line="95" column="13" selection-start="2751" selection-end="2751" vertical-scroll-proportion="0.6292517" vertical-offset="870" max-vertical-offset="2130">
           <folding />
         </state>
       </provider>
