@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.coffee" afterPath="$PROJECT_DIR$/js/main.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.map" afterPath="$PROJECT_DIR$/js/main.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="52diet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +49,7 @@
       <file leaf-file-name="main.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="13" selection-start="2751" selection-end="2751" vertical-scroll-proportion="0.6292517" vertical-offset="870" max-vertical-offset="2130">
+            <state line="101" column="35" selection-start="2902" selection-end="2905" vertical-scroll-proportion="0.64285713" vertical-offset="948" max-vertical-offset="1830">
               <folding />
             </state>
           </provider>
@@ -511,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="65" selection-start="538" selection-end="538" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/data/weight.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="47" selection-start="38" selection-end="64" vertical-scroll-proportion="-0.4" vertical-offset="0" max-vertical-offset="195">
@@ -532,9 +526,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="65" selection-start="538" selection-end="538" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="13" selection-start="2751" selection-end="2751" vertical-scroll-proportion="0.6292517" vertical-offset="870" max-vertical-offset="2130">
+        <state line="101" column="35" selection-start="2902" selection-end="2905" vertical-scroll-proportion="0.64285713" vertical-offset="948" max-vertical-offset="1830">
           <folding />
         </state>
       </provider>

@@ -86,6 +86,8 @@
         console.dir(weightItems);
         activityItems = _.chain(activityData.items).extractStartOfDay(function(item) {
           return item.start_time;
+        }).filter(function(i) {
+          return i.type === "Running";
         }).value();
         console.dir(activityItems);
         items = _.chain([weightItems, activityItems]).joinOnDay().filter(function(i) {

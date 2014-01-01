@@ -85,6 +85,7 @@ $(() ->
 
       activityItems = _.chain(activityData.items).
         extractStartOfDay((item) => item.start_time).
+        filter((i) => i.type == "Running").
         value()
 
       console.dir(activityItems)
@@ -96,27 +97,6 @@ $(() ->
         value()
 
       console.dir(items)
-
-#      caloriesPerDay = _.chain(activityItems).
-#        groupBy((item) => moment(item.start_time).startOf('day')).
-#        map((items, startOfDayMoment) =>
-#          {
-#            timestamp: startOfDayMoment.toDate().toString()
-#            total_calories: _.reduce(items, (total, item) => item.total_calories + total, 0)
-#          }
-#        ).
-#        value()
-#
-#      console.dir(caloriesPerDay)
-
-#      mergedItems = weightItems
-#      _.each(activityItems, (item, index) =>
-#        _.keys(item).forEach((key) =>
-#          mergedItems[index][key] = item[key]
-#        )
-#      )
-#
-#      console.dir(mergedItems)
 
       myChart = new dimple.chart(svg, items)
       myChart.setBounds(60, 30, 505, 305)
