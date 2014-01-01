@@ -4,13 +4,20 @@
     var svg,
       _this = this;
     console.log("Started");
-    svg = dimple.newSvg("#chartContainer", 590, 400);
+    svg = dimple.newSvg("#chartContainer", 590, 500);
     return d3.json("/js/data/snapshot.json", function(data) {
-      var items, myChart, s, x;
-      items = data.items;
+      var aYearAgo, items, myChart, now, s, x;
+      now = moment();
+      aYearAgo = now.subtract('years', 1);
+      console.dir(aYearAgo);
+      items = data.items.filter(function(i) {
+        return i.weight > 50;
+      }).filter(function(i) {
+        return moment(i.timestamp).isAfter(aYearAgo);
+      });
       myChart = new dimple.chart(svg, items);
       myChart.setBounds(60, 30, 505, 305);
-      x = myChart.addTimeAxis("x", "timestamp");
+      x = myChart.addTimeAxis("x", "timestamp", null, "%Y-%m-%d");
       x.addOrderRule("Date");
       myChart.addMeasureAxis("y", "weight");
       s = myChart.addSeries(null, dimple.plot.line);
